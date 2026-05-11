@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FCRP Part 1 — Risk Essentials Foundation | Fincomp Academy</title>
+<link href="./FCRP Part 1 — Risk Essentials Foundation _ Fincomp Academy ebook_files/css2" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:   #0D2137;
+  --teal:   #0B7A75;
+  --teal2:  #14A098;
+  --sky:    #7ECECA;
+  --gold:   #C9922A;
+  --cream:  #FAF7F2;
+  --paper:  #F5F0E8;
+  --white:  #FFFFFF;
+  --gray:   #64748B;
+  --lgray:  #E8EFF5;
+  --text:   #1A2B3C;
+  --muted:  #8899AA;
+  --red:    #C0392B;
+  --green:  #1A6B5A;
+  --purple: #4A1A7C;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  background: #2C3E50;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ── LAYOUT ── */
+.book-wrapper {
+  max-width: 820px;
+  margin: 0 auto;
+  background: var(--cream);
+  box-shadow: 0 0 80px rgba(0,0,0,0.5);
+  min-height: 100vh;
+}
+
+/* ── COVER PAGE ── */
+.cover {
+  min-height: 100vh;
+  background: var(--navy);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cover::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background:
+    radial-gradient(ellipse at 20% 30%, rgba(11,122,117,0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(11,122,117,0.15) 0%, transparent 50%);
+}
+
+.cover-top {
+  padding: 48px 56px 0;
+  position: relative; z-index: 1;
+  display: flex; justify-content: space-between; align-items: flex-start;
+}
+
+.cover-academy {
+  display: flex; align-items: center; gap: 12px;
+}
+
+.cover-owl {
+  width: 42px; height: 42px; background: var(--teal);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+}
+
+.cover-academy-name {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 13px; font-weight: 700; letter-spacing: 4px;
+  color: var(--sky); text-transform: uppercase;
+}
+
+.cover-badge {
+  background: rgba(11,122,117,0.2); border: 1px solid rgba(126,206,202,0.4);
+  border-radius: 6px; padding: 6px 14px;
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  color: var(--sky); text-transform: uppercase;
+}
+
+.cover-middle {
+  padding: 0 56px;
+  position: relative; z-index: 1;
+}
+
+.cover-series {
+  font-size: 12px; letter-spacing: 5px; color: var(--teal2); font-weight: 600;
+  text-transform: uppercase; margin-bottom: 20px;
+  display: flex; align-items: center; gap: 12px;
+}
+.cover-series::before { content: ''; width: 40px; height: 1px; background: var(--teal2); }
+
+.cover-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 62px; font-weight: 900; line-height: 1.05;
+  color: var(--white); margin-bottom: 12px;
+}
+.cover-title em { color: var(--sky); font-style: italic; }
+
+.cover-subtitle {
+  font-size: 20px; color: rgba(255,255,255,0.6); font-weight: 300;
+  letter-spacing: 1px; margin-bottom: 40px;
+}
+
+.cover-divider {
+  width: 80px; height: 3px;
+  background: linear-gradient(to right, var(--teal), var(--sky));
+  margin-bottom: 36px;
+}
+
+.cover-desc {
+  font-size: 15px; color: rgba(255,255,255,0.55); line-height: 1.7;
+  max-width: 520px; font-style: italic;
+}
+
+.cover-bottom {
+  padding: 40px 56px;
+  position: relative; z-index: 1;
+  display: flex; justify-content: space-between; align-items: flex-end;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.cover-author-block .label {
+  font-size: 10px; letter-spacing: 3px; color: var(--sky); font-weight: 700;
+  text-transform: uppercase; margin-bottom: 4px;
+}
+.cover-author-block .name {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px; color: var(--white); font-weight: 600;
+}
+.cover-author-block .role {
+  font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 2px;
+}
+
+.cover-meta { text-align: right; }
+.cover-meta .edition { font-size: 11px; color: rgba(255,255,255,0.35); letter-spacing: 2px; }
+.cover-meta .year { font-family: 'Playfair Display', serif; font-size: 28px; color: rgba(255,255,255,0.2); font-weight: 700; }
+
+/* ── NAV / TOC SIDEBAR ── */
+.nav-bar {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--navy);
+  padding: 12px 40px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 2px solid var(--teal);
+}
+.nav-title { font-size: 13px; font-weight: 700; color: var(--sky); letter-spacing: 1px; }
+.nav-links { display: flex; gap: 6px; flex-wrap: wrap; }
+.nav-link {
+  font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.5);
+  padding: 4px 10px; border-radius: 4px; text-decoration: none;
+  transition: all 0.2s; letter-spacing: 0.5px;
+}
+.nav-link:hover { background: rgba(255,255,255,0.1); color: var(--sky); }
+
+/* ── TABLE OF CONTENTS ── */
+.toc-page {
+  background: var(--paper);
+  padding: 64px 56px;
+  border-bottom: 1px solid var(--lgray);
+}
+
+.toc-header {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px; font-weight: 700; color: var(--navy);
+  margin-bottom: 8px;
+}
+.toc-sub {
+  font-size: 13px; color: var(--muted); letter-spacing: 2px;
+  text-transform: uppercase; margin-bottom: 48px;
+  display: flex; align-items: center; gap: 12px;
+}
+.toc-sub::after { content: ''; flex: 1; height: 1px; background: var(--lgray); }
+
+.toc-list { list-style: none; }
+
+.toc-section {
+  margin-bottom: 28px;
+}
+
+.toc-section-num {
+  font-size: 10px; font-weight: 700; letter-spacing: 3px;
+  color: var(--teal2); text-transform: uppercase; margin-bottom: 4px;
+}
+
+.toc-section-link {
+  display: flex; align-items: baseline; gap: 0;
+  text-decoration: none; color: var(--navy);
+  font-family: 'Playfair Display', serif;
+  font-size: 22px; font-weight: 600;
+  border-bottom: 1px dashed var(--lgray);
+  padding-bottom: 10px;
+  transition: color 0.2s;
+}
+.toc-section-link:hover { color: var(--teal); }
+
+.toc-dots { flex: 1; border-bottom: 2px dotted var(--lgray); margin: 0 12px; position: relative; top: -4px; }
+.toc-page-num { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--muted); font-style: italic; }
+
+.toc-sub-items { list-style: none; padding-left: 28px; margin-top: 8px; }
+.toc-sub-item {
+  display: flex; align-items: baseline;
+  font-size: 14px; color: var(--gray);
+  padding: 3px 0; gap: 0;
+  text-decoration: none;
+}
+.toc-sub-item:hover { color: var(--teal); }
+.toc-sub-item .sdots { flex: 1; border-bottom: 1px dotted var(--lgray); margin: 0 8px; position: relative; top: -3px; }
+.toc-sub-item .spnum { font-size: 13px; color: var(--muted); }
+
+/* ── CHAPTER PAGES ── */
+.chapter {
+  padding: 0;
+  border-bottom: 3px solid var(--lgray);
+}
+
+.chapter-header {
+  background: var(--navy);
+  padding: 56px 56px 48px;
+  position: relative; overflow: hidden;
+}
+
+.chapter-header::after {
+  content: attr(data-num);
+  position: absolute; right: 40px; top: 50%; transform: translateY(-50%);
+  font-family: 'Playfair Display', serif;
+  font-size: 160px; font-weight: 900; color: rgba(255,255,255,0.04);
+  line-height: 1; pointer-events: none;
+}
+
+.chapter-eyebrow {
+  font-size: 10px; letter-spacing: 5px; color: var(--teal2); font-weight: 700;
+  text-transform: uppercase; margin-bottom: 16px;
+  display: flex; align-items: center; gap: 10px;
+}
+.chapter-eyebrow::before { content: ''; width: 30px; height: 2px; background: var(--teal2); }
+
+.chapter-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 44px; font-weight: 800; color: var(--white); line-height: 1.1;
+  margin-bottom: 16px; position: relative; z-index: 1;
+}
+
+.chapter-desc {
+  font-size: 16px; color: rgba(255,255,255,0.55); line-height: 1.65;
+  max-width: 580px; position: relative; z-index: 1;
+}
+
+.chapter-body {
+  padding: 48px 56px;
+  background: var(--cream);
+}
+
+/* ── CONTENT ELEMENTS ── */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px; font-weight: 700; color: var(--navy);
+  margin: 40px 0 16px; padding-bottom: 10px;
+  border-bottom: 2px solid var(--lgray);
+}
+h2:first-child { margin-top: 0; }
+
+h3 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 18px; font-weight: 700; color: var(--teal);
+  margin: 28px 0 10px;
+  text-transform: uppercase; letter-spacing: 1px; font-size: 13px;
+}
+
+p { margin-bottom: 16px; font-size: 16px; line-height: 1.75; color: var(--text); }
+
+strong { color: var(--navy); font-weight: 700; }
+
+em { color: var(--teal); font-style: italic; }
+
+/* ── CALLOUT BOXES ── */
+.callout {
+  border-left: 4px solid var(--teal);
+  background: #EBF5F5;
+  padding: 18px 22px;
+  border-radius: 0 8px 8px 0;
+  margin: 24px 0;
+}
+.callout.gold { border-left-color: var(--gold); background: #FBF5E6; }
+.callout.red  { border-left-color: var(--red);  background: #FBF0EE; }
+.callout.navy { border-left-color: var(--navy); background: #EEF2F6; }
+.callout.purple { border-left-color: var(--purple); background: #F2EEF8; }
+
+.callout-label {
+  font-size: 10px; font-weight: 800; letter-spacing: 3px;
+  text-transform: uppercase; margin-bottom: 6px; color: var(--teal);
+}
+.callout.gold .callout-label { color: var(--gold); }
+.callout.red  .callout-label { color: var(--red); }
+.callout.navy .callout-label { color: var(--navy); }
+.callout.purple .callout-label { color: var(--purple); }
+
+.callout p { margin-bottom: 0; font-size: 15px; }
+
+/* ── ISO DEFINITION BOX ── */
+.iso-box {
+  background: var(--navy); border-radius: 10px;
+  padding: 28px 32px; margin: 28px 0;
+  position: relative; overflow: hidden;
+}
+.iso-box::before {
+  content: '"'; position: absolute; top: -10px; left: 20px;
+  font-family: 'Playfair Display', serif; font-size: 120px;
+  color: rgba(126,206,202,0.1); line-height: 1;
+}
+.iso-box .iso-label { font-size: 10px; letter-spacing: 3px; color: var(--sky); font-weight: 700; text-transform: uppercase; margin-bottom: 12px; }
+.iso-box .iso-text { font-family: 'Playfair Display', serif; font-size: 26px; color: var(--white); font-style: italic; line-height: 1.4; position: relative; z-index: 1; }
+.iso-box .iso-ref { font-size: 12px; color: rgba(126,206,202,0.6); margin-top: 12px; }
+
+/* ── CONCEPT CARDS ── */
+.concept-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 16px; margin: 24px 0;
+}
+.concept-card {
+  background: var(--white); border-radius: 10px;
+  padding: 20px; border-top: 3px solid var(--teal);
+  box-shadow: 0 2px 12px rgba(13,33,55,0.06);
+}
+.concept-card.navy-card { border-top-color: var(--navy); }
+.concept-card.gold-card { border-top-color: var(--gold); }
+.concept-card.red-card  { border-top-color: var(--red); }
+.concept-card.purple-card { border-top-color: var(--purple); }
+
+.concept-card .cc-icon { font-size: 26px; margin-bottom: 8px; display: block; }
+.concept-card .cc-title { font-size: 15px; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+.concept-card .cc-body  { font-size: 14px; color: var(--gray); line-height: 1.55; }
+
+/* ── RISK TYPE CARDS ── */
+.risk-type-card {
+  display: grid; grid-template-columns: 72px 1fr;
+  gap: 0; border-radius: 8px; overflow: hidden;
+  margin: 12px 0;
+  box-shadow: 0 2px 10px rgba(13,33,55,0.07);
+}
+.rtc-icon {
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px; padding: 20px;
+}
+.rtc-body { background: var(--white); padding: 16px 18px; }
+.rtc-title { font-size: 15px; font-weight: 800; color: var(--navy); margin-bottom: 4px; }
+.rtc-def   { font-size: 13.5px; color: var(--gray); line-height: 1.5; margin-bottom: 6px; }
+.rtc-eg    { font-size: 12.5px; color: var(--muted); font-style: italic; }
+.rtc-eg strong { color: var(--teal); font-style: normal; }
+
+/* ── TECHNIQUE CARDS (ID techniques) ── */
+.technique-card {
+  background: var(--white); border-radius: 12px;
+  margin: 20px 0; overflow: hidden;
+  box-shadow: 0 3px 16px rgba(13,33,55,0.08);
+}
+.tc-header {
+  padding: 18px 24px;
+  display: flex; align-items: center; gap: 14px;
+}
+.tc-icon { font-size: 32px; flex-shrink: 0; }
+.tc-name { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--white); }
+.tc-tag  { font-size: 10px; font-weight: 700; letter-spacing: 2px; color: rgba(255,255,255,0.65); text-transform: uppercase; margin-top: 2px; }
+
+.tc-body { padding: 20px 24px; }
+.tc-desc { font-size: 15px; color: var(--text); line-height: 1.65; margin-bottom: 16px; }
+.tc-how  { font-size: 13.5px; color: var(--gray); line-height: 1.6; margin-bottom: 16px; background: var(--cream); border-radius: 6px; padding: 12px 16px; }
+.tc-how strong { color: var(--navy); }
+
+.tc-pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.tc-pros, .tc-cons { border-radius: 8px; padding: 14px 16px; }
+.tc-pros { background: #EEF8F3; }
+.tc-cons { background: #FEF0EE; }
+.tc-pros .label { font-size: 10px; font-weight: 800; letter-spacing: 2px; color: var(--green); text-transform: uppercase; margin-bottom: 8px; }
+.tc-cons .label { font-size: 10px; font-weight: 800; letter-spacing: 2px; color: var(--red); text-transform: uppercase; margin-bottom: 8px; }
+.tc-list { list-style: none; }
+.tc-list li { font-size: 13px; color: var(--text); line-height: 1.55; padding: 3px 0; display: flex; gap: 8px; }
+.tc-list li::before { content: '▸'; color: var(--green); flex-shrink: 0; }
+.tc-cons .tc-list li::before { color: var(--red); content: '▸'; }
+
+.tc-tip {
+  margin-top: 14px; padding: 10px 16px;
+  background: rgba(11,122,117,0.08); border-radius: 6px;
+  font-size: 13px; color: var(--teal); display: flex; gap: 8px;
+}
+.tc-tip::before { content: '💡'; flex-shrink: 0; }
+
+/* ── 3 LINES DIAGRAM ── */
+.lines-diagram {
+  margin: 24px 0;
+  border-radius: 10px; overflow: hidden;
+  box-shadow: 0 3px 16px rgba(13,33,55,0.1);
+}
+.lines-board {
+  background: var(--navy); padding: 12px 20px; text-align: center;
+  font-size: 12px; font-weight: 700; color: var(--sky); letter-spacing: 2px; text-transform: uppercase;
+}
+.lines-row {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+}
+.line-block { padding: 20px; border-right: 1px solid rgba(255,255,255,0.1); }
+.line-block:last-child { border-right: none; }
+.lb-num   { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 900; color: rgba(255,255,255,0.9); line-height: 1; margin-bottom: 4px; }
+.lb-label { font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.5); text-transform: uppercase; margin-bottom: 8px; }
+.lb-title { font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+.lb-desc  { font-size: 12.5px; color: rgba(255,255,255,0.6); line-height: 1.5; }
+.lb-who   { font-size: 11px; color: rgba(255,255,255,0.4); margin-top: 6px; font-style: italic; }
+
+/* ── REAL WORLD BOX ── */
+.real-world {
+  background: var(--paper); border-radius: 10px;
+  padding: 20px 24px; margin: 20px 0;
+  border: 1px solid var(--lgray);
+}
+.rw-label { font-size: 10px; font-weight: 800; letter-spacing: 3px; color: var(--navy); text-transform: uppercase; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.rw-label::after { content: ''; flex: 1; height: 1px; background: var(--lgray); }
+.rw-title { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+.rw-body  { font-size: 14px; color: var(--gray); line-height: 1.6; }
+
+/* ── REFERENCE LINKS ── */
+.references {
+  background: var(--paper); border-radius: 10px;
+  padding: 24px 28px; margin: 32px 0 0;
+  border: 1px solid var(--lgray);
+}
+.ref-title { font-size: 11px; font-weight: 800; letter-spacing: 3px; color: var(--navy); text-transform: uppercase; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.ref-title::after { content: ''; flex: 1; height: 1px; background: var(--lgray); }
+.ref-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.ref-item { display: flex; gap: 10px; align-items: flex-start; }
+.ref-bullet { color: var(--teal); font-weight: 700; flex-shrink: 0; }
+.ref-item a { color: var(--teal); text-decoration: none; font-size: 14px; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+.ref-item a:hover { border-bottom-color: var(--teal); }
+.ref-item .ref-desc { font-size: 13px; color: var(--muted); margin-left: 4px; }
+
+/* ── CHAPTER QUESTIONS ── */
+.questions-section {
+  background: var(--navy); padding: 36px 56px;
+  border-top: 4px solid var(--teal);
+}
+.qs-header {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px; font-weight: 700; color: var(--white);
+  margin-bottom: 6px;
+}
+.qs-sub { font-size: 13px; color: rgba(126,206,202,0.7); margin-bottom: 24px; }
+.qs-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+.qs-item { display: flex; gap: 14px; align-items: flex-start; }
+.qs-num {
+  background: var(--teal); color: var(--white);
+  font-size: 12px; font-weight: 800;
+  min-width: 28px; height: 28px;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 2px;
+}
+.qs-text { font-size: 15px; color: rgba(255,255,255,0.85); line-height: 1.6; }
+.qs-type { font-size: 10px; font-weight: 700; letter-spacing: 2px; color: var(--sky); text-transform: uppercase; margin-top: 3px; }
+
+/* ── PAGE NUMBER FOOTER ── */
+.page-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 56px;
+  border-top: 1px solid var(--lgray);
+  background: var(--cream);
+}
+.pf-left  { font-size: 12px; color: var(--muted); font-style: italic; }
+.pf-right { font-size: 12px; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
+.pf-center { font-size: 11px; color: var(--lgray); letter-spacing: 2px; }
+
+/* ── BULLET LISTS ── */
+.book-list { list-style: none; margin: 14px 0 20px; padding-left: 8px; }
+.book-list li { display: flex; gap: 10px; align-items: flex-start; padding: 5px 0; font-size: 15.5px; color: var(--text); line-height: 1.6; }
+.book-list li::before { content: '▸'; color: var(--teal); flex-shrink: 0; margin-top: 1px; }
+.book-list.check li::before { content: '✓'; color: var(--green); font-weight: 700; }
+.book-list.dash li::before { content: '—'; color: var(--muted); }
+
+/* ── TABLE ── */
+.book-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+.book-table th { background: var(--navy); color: var(--white); padding: 10px 14px; text-align: left; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+.book-table td { padding: 10px 14px; border-bottom: 1px solid var(--lgray); vertical-align: top; line-height: 1.55; }
+.book-table tr:nth-child(even) td { background: var(--paper); }
+.book-table tr:hover td { background: #EBF5F5; }
+
+/* ── INDEX ── */
+.index-page { padding: 56px; background: var(--paper); }
+.index-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+.index-letter { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 900; color: var(--teal); margin: 20px 0 6px; border-bottom: 2px solid var(--lgray); padding-bottom: 4px; }
+.index-term { display: flex; justify-content: space-between; font-size: 14px; color: var(--text); padding: 4px 0; border-bottom: 1px dotted var(--lgray); }
+.index-term .ipage { color: var(--muted); font-family: 'JetBrains Mono', monospace; font-size: 12px; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 680px) {
+  .cover-title { font-size: 38px; }
+  .cover, .toc-page, .chapter-header, .chapter-body, .questions-section { padding-left: 24px; padding-right: 24px; }
+  .chapter-header::after { display: none; }
+  .concept-grid, .tc-pros-cons, .lines-row, .index-grid { grid-template-columns: 1fr; }
+  .nav-bar { flex-direction: column; gap: 8px; padding: 10px 20px; }
+  .nav-links { justify-content: center; }
+  .page-footer { padding: 12px 24px; }
+  .cover-top, .cover-bottom { padding-left: 24px; padding-right: 24px; }
+  .cover-middle { padding: 0 24px; }
+}
+</style>
+</head>
+<body>
+<div class="book-wrapper">
+
+<!-- ═══════════════════ COVER PAGE ═══════════════════ -->
+<div class="cover" id="cover">
+  <div class="cover-top">
+    <div class="cover-academy">
+      <div class="cover-owl">🦉</div>
+      <div class="cover-academy-name">Fincomp Academy</div>
+    </div>
+    <div class="cover-badge">ISO 31000:2018 Aligned</div>
+  </div>
+
+  <div class="cover-middle">
+    <div class="cover-series">FCRP Certification Series &nbsp;·&nbsp; Part 1 of 2</div>
+    <div class="cover-title">Risk<br><em>Essentials</em><br>Foundation</div>
+    <div class="cover-subtitle">Risk Management — From Zero to Confident</div>
+    <div class="cover-divider"></div>
+    <div class="cover-desc">
+      A comprehensive foundation guide for new professionals, non-risk staff and students stepping into the world of risk management for the first time. Aligned to ISO 31000:2018.
+    </div>
+  </div>
+
+  <div class="cover-bottom">
+    <div class="cover-author-block">
+      <div class="label">Author</div>
+      <div class="name">Sabarish Raman</div>
+      <div class="role">Founder, Fincomp Academy</div>
+    </div>
+    <div class="cover-meta">
+      <div class="edition">First Edition</div>
+      <div class="year">2025</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════ STICKY NAV ═══════════════════ -->
+<nav class="nav-bar">
+  <div class="nav-title">📘 FCRP Part 1</div>
+  <div class="nav-links">
+    <a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#toc" class="nav-link">Contents</a>
+    <a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch1" class="nav-link">Ch 1</a>
+    <a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch2" class="nav-link">Ch 2</a>
+    <a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch3" class="nav-link">Ch 3</a>
+    <a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch4" class="nav-link">Ch 4</a>
+    <a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch5" class="nav-link">Ch 5</a>
+    <a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch6" class="nav-link">Ch 6</a>
+    <a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#index" class="nav-link">Index</a>
+  </div>
+</nav>
+
+<!-- ═══════════════════ TABLE OF CONTENTS ═══════════════════ -->
+<div class="toc-page" id="toc">
+  <div class="toc-header">Table of Contents</div>
+  <div class="toc-sub">Risk Essentials Foundation &nbsp;·&nbsp; Fincomp Academy</div>
+
+  <ul class="toc-list">
+
+    <li class="toc-section">
+      <div class="toc-section-num">Chapter One</div>
+      <a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch1" class="toc-section-link">
+        What is Risk?
+        <span class="toc-dots"></span>
+        <span class="toc-page-num">3</span>
+      </a>
+      <ul class="toc-sub-items">
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch1-myths" class="toc-sub-item">Common Myths About Risk<span class="sdots"></span><span class="spnum">3</span></a></li>
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch1-def" class="toc-sub-item">The ISO 31000 Definition<span class="sdots"></span><span class="spnum">4</span></a></li>
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch1-effect" class="toc-sub-item">Breaking It Down: Effect, Uncertainty, Objectives<span class="sdots"></span><span class="spnum">5</span></a></li>
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch1-pos-neg" class="toc-sub-item">Positive vs Negative Risk<span class="sdots"></span><span class="spnum">6</span></a></li>
+      </ul>
+    </li>
+
+    <li class="toc-section">
+      <div class="toc-section-num">Chapter Two</div>
+      <a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch2" class="toc-section-link">
+        Types of Risk
+        <span class="toc-dots"></span>
+        <span class="toc-page-num">8</span>
+      </a>
+      <ul class="toc-sub-items">
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch2-six" class="toc-sub-item">The 6 Core Risk Categories<span class="sdots"></span><span class="spnum">8</span></a></li>
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch2-cascade" class="toc-sub-item">How Risks Cascade<span class="sdots"></span><span class="spnum">11</span></a></li>
+      </ul>
+    </li>
+
+    <li class="toc-section">
+      <div class="toc-section-num">Chapter Three</div>
+      <a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch3" class="toc-section-link">
+        Initiating Risk Identification
+        <span class="toc-dots"></span>
+        <span class="toc-page-num">13</span>
+      </a>
+      <ul class="toc-sub-items">
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch3-process" class="toc-sub-item">The ISO 31000 Identification Process<span class="sdots"></span><span class="spnum">13</span></a></li>
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch3-techniques" class="toc-sub-item">Risk Identification Techniques<span class="sdots"></span><span class="spnum">15</span></a></li>
+      </ul>
+    </li>
+
+    <li class="toc-section">
+      <div class="toc-section-num">Chapter Four</div>
+      <a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch4" class="toc-section-link">
+        Governance, Reporting &amp; 3 Lines of Defense
+        <span class="toc-dots"></span>
+        <span class="toc-page-num">22</span>
+      </a>
+      <ul class="toc-sub-items">
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch4-governance" class="toc-sub-item">What is Risk Governance?<span class="sdots"></span><span class="spnum">22</span></a></li>
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch4-lines" class="toc-sub-item">The 3 Lines of Defense Model<span class="sdots"></span><span class="spnum">23</span></a></li>
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch4-reporting" class="toc-sub-item">Risk Reporting &amp; Escalation<span class="sdots"></span><span class="spnum">25</span></a></li>
+      </ul>
+    </li>
+
+    <li class="toc-section">
+      <div class="toc-section-num">Chapter Five</div>
+      <a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch5" class="toc-section-link">
+        Case Study — NovaTech Solutions
+        <span class="toc-dots"></span>
+        <span class="toc-page-num">27</span>
+      </a>
+      <ul class="toc-sub-items">
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch5-background" class="toc-sub-item">Company Background<span class="sdots"></span><span class="spnum">27</span></a></li>
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch5-events" class="toc-sub-item">The Events Unfold<span class="sdots"></span><span class="spnum">28</span></a></li>
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch5-analysis" class="toc-sub-item">Analysis &amp; Lessons Learned<span class="sdots"></span><span class="spnum">29</span></a></li>
+      </ul>
+    </li>
+
+    <li class="toc-section">
+      <div class="toc-section-num">Chapter Six</div>
+      <a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch6" class="toc-section-link">
+        Risk Culture &amp; Human Factors
+        <span class="toc-dots"></span>
+        <span class="toc-page-num">31</span>
+      </a>
+      <ul class="toc-sub-items">
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch6-culture" class="toc-sub-item">What is Risk Culture?<span class="sdots"></span><span class="spnum">31</span></a></li>
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch6-why" class="toc-sub-item">Why Culture Trumps Process<span class="sdots"></span><span class="spnum">32</span></a></li>
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch6-human" class="toc-sub-item">Human Factors in Risk<span class="sdots"></span><span class="spnum">33</span></a></li>
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch6-bias" class="toc-sub-item">Cognitive Biases That Create Risk<span class="sdots"></span><span class="spnum">35</span></a></li>
+        <li><a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#ch6-building" class="toc-sub-item">Building a Healthy Risk Culture<span class="sdots"></span><span class="spnum">37</span></a></li>
+      </ul>
+    </li>
+
+    <li class="toc-section">
+      <div class="toc-section-num">Back Matter</div>
+      <a href="file:///C:/Users/SABARISHRAMAN/Downloads/FCRP_Part1_Ebook%20(1).html#index" class="toc-section-link">
+        Index
+        <span class="toc-dots"></span>
+        <span class="toc-page-num">39</span>
+      </a>
+    </li>
+
+  </ul>
+</div>
+
+<div class="page-footer">
+  <div class="pf-left">Fincomp Academy — FCRP Part 1</div>
+  <div class="pf-right">ii</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHAPTER 1 — WHAT IS RISK?
+═══════════════════════════════════════════════════════════ -->
+<div class="chapter" id="ch1">
+  <div class="chapter-header" data-num="01">
+    <div class="chapter-eyebrow">Chapter One</div>
+    <div class="chapter-title">What is Risk?</div>
+    <div class="chapter-desc">Before we can manage risk, we need to know what it actually is — and clear up the misconceptions that follow it everywhere.</div>
+  </div>
+
+  <div class="chapter-body">
+
+    <!-- MYTHS -->
+    <h2 id="ch1-myths">1.1 &nbsp; Common Myths About Risk</h2>
+    <p>Walk into any organisation and ask ten people what "risk" means. You'll likely hear: <em>"something that goes wrong"</em>, or <em>"that's the Risk Manager's job"</em>, or <em>"we can't afford to think about risk, we're too busy."</em></p>
+    <p>These are myths — and clearing them out is the first step to building a real understanding of risk management.</p>
+
+    <div class="concept-grid">
+      <div class="concept-card red-card">
+        <span class="cc-icon">❌</span>
+        <div class="cc-title">Myth: Risk = bad things that happen</div>
+        <div class="cc-body">Risk is uncertainty — not just negative outcomes. ISO 31000 explicitly recognises positive effects (opportunities) alongside threats.</div>
+      </div>
+      <div class="concept-card red-card">
+        <span class="cc-icon">❌</span>
+        <div class="cc-title">Myth: Risk management is the Risk Manager's job</div>
+        <div class="cc-body">Every employee in every role owns the risks created by their daily activities. Risk is a shared responsibility across all three lines of defence.</div>
+      </div>
+      <div class="concept-card red-card">
+        <span class="cc-icon">❌</span>
+        <div class="cc-title">Myth: Good risk management eliminates all risk</div>
+        <div class="cc-body">Impossible — and undesirable. The goal is taking the <em>right</em> risks at the <em>right</em> level to achieve your objectives. Eliminating risk means eliminating opportunity.</div>
+      </div>
+      <div class="concept-card red-card">
+        <span class="cc-icon">❌</span>
+        <div class="cc-title">Myth: Risk management is expensive</div>
+        <div class="cc-body">A basic risk identification checklist costs nothing. Research by PMI shows reactive risk management costs 3–5× more than proactive planning.</div>
+      </div>
+    </div>
+
+    <div class="callout gold">
+      <div class="callout-label">💡 Real World</div>
+      <p><strong>Airbnb (2009):</strong> Letting strangers sleep in people's homes was a massive reputational and legal risk. Instead of avoiding it, they managed it through insurance, identity verification and reviews. Today Airbnb is worth over $75 billion. Eliminating that risk would have killed the business before it started.</p>
+    </div>
+
+    <!-- ISO DEFINITION -->
+    <h2 id="ch1-def">1.2 &nbsp; The ISO 31000 Definition</h2>
+    <p>ISO 31000:2018 is the international standard for risk management. It provides universal principles and guidelines that apply to any organisation, in any industry, anywhere in the world.</p>
+    <p>At its heart, the standard defines risk with just six words:</p>
+
+    <div class="iso-box">
+      <div class="iso-label">ISO 31000:2018 — Definition of Risk</div>
+      <div class="iso-text">"The effect of uncertainty on objectives"</div>
+      <div class="iso-ref">Source: ISO 31000:2018, Section 3.1 — <a href="https://www.iso.org/standard/65694.html" target="_blank" style="color:#7ECECA">iso.org/standard/65694.html</a></div>
+    </div>
+
+    <p>Six words. But they contain three powerful concepts that are worth unpacking individually — because once you understand all three, the entire field of risk management starts to make sense.</p>
+
+    <!-- BREAKING IT DOWN -->
+    <h2 id="ch1-effect">1.3 &nbsp; Breaking It Down: Effect · Uncertainty · Objectives</h2>
+    <h3>Effect</h3>
+    <p>An "effect" is a <strong>deviation from what was expected</strong>. It is not the risk itself — it is what would happen <em>if</em> the uncertain event occurs. Effects can be positive or negative.</p>
+
+    <div class="callout navy">
+      <div class="callout-label">📌 Example</div>
+      <p>A restaurant plans for 100 customers on Saturday. A heavy rainstorm (uncertainty) could reduce footfall to 40 — a negative effect on revenue. Or, if they set up indoor entertainment to take advantage of the weather, they may attract an extra 30 customers — a positive effect. Both are consequences of the same uncertainty.</p>
+    </div>
+
+    <h3>Uncertainty</h3>
+    <p>Uncertainty is the <strong>state of not fully knowing whether or how something will happen</strong>. It is not the same as ignorance — you can be aware of an uncertainty without knowing its outcome. ISO 31000 recognises three types:</p>
+
+    <table class="book-table">
+      <thead><tr><th>Type</th><th>Description</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Known-Known</strong></td><td>Things we know that we know. We can plan directly for them.</td><td>Our annual software licence renews in March. We budget for it.</td></tr>
+        <tr><td><strong>Known-Unknown</strong></td><td>Things we know exist, but we don't know the outcome. Most risk management focuses here.</td><td>We know a regulatory review is coming — we don't know the findings.</td></tr>
+        <tr><td><strong>Unknown-Unknown</strong></td><td>"Black Swan" territory. Things we don't know we don't know.</td><td>No organisation modelled a global pandemic shutting all offices in 2020.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <div class="callout-label">🔑 Key Principle</div>
+      <p>Risk management focuses most on <strong>Known-Unknowns</strong> — the uncertainties we can anticipate and prepare for. Black Swans, by definition, are the hardest to manage, but a strong risk culture reduces their impact significantly.</p>
+    </div>
+
+    <h3>Objectives</h3>
+    <p>Risk only exists in relation to <strong>what you are trying to achieve</strong>. Without an objective, there is no risk. A fire in an empty field is not a risk. A fire near your warehouse IS — because it threatens your operational objective of maintaining inventory and continuity.</p>
+    <p>Objectives exist at every level of an organisation:</p>
+    <ul class="book-list">
+      <li><strong>Strategic objectives</strong> — long-term goals set by the Board and senior management</li>
+      <li><strong>Operational objectives</strong> — department and project-level targets</li>
+      <li><strong>Individual objectives</strong> — your personal KPIs, tasks and quality standards</li>
+    </ul>
+
+    <!-- POSITIVE VS NEGATIVE -->
+    <h2 id="ch1-pos-neg">1.4 &nbsp; Positive vs Negative Risk</h2>
+    <p>One of the most common misconceptions is that risk is always bad. ISO 31000 is clear: risk includes both <strong>threats</strong> (negative effects) and <strong>opportunities</strong> (positive effects).</p>
+
+    <div class="concept-grid">
+      <div class="concept-card red-card">
+        <span class="cc-icon">⚠</span>
+        <div class="cc-title">Threat (Negative Risk)</div>
+        <div class="cc-body">A key supplier goes bankrupt, disrupting your production line. A cyberattack exposes customer data. A flood damages your warehouse stock.</div>
+      </div>
+      <div class="concept-card" style="border-top-color: var(--green);">
+        <span class="cc-icon">🚀</span>
+        <div class="cc-title">Opportunity (Positive Risk)</div>
+        <div class="cc-body">A competitor exits your market, opening new customer segments. A regulatory change favours your product line. A viral social media post doubles your enquiries overnight.</div>
+      </div>
+    </div>
+
+    <div class="real-world">
+      <div class="rw-label">📌 Real-World Reference</div>
+      <div class="rw-title">Netflix vs Blockbuster — Strategic Risk and Opportunity</div>
+      <div class="rw-body">When Netflix approached Blockbuster in 2000 offering to sell for $50 million, Blockbuster declined. Netflix had identified streaming and subscription models as opportunities — Blockbuster saw only the disruption threat. By 2010, Blockbuster filed for bankruptcy. Netflix's willingness to embrace uncertainty turned into a $200 billion business. <br><br>Reference: <a href="https://www.bbc.com/news/business-42765580" target="_blank" style="color:var(--teal)">BBC — The Blockbuster Story (bbc.com/news/business-42765580)</a></div>
+    </div>
+
+  </div><!-- end chapter-body -->
+
+  <!-- REFERENCES CH1 -->
+  <div style="padding: 0 56px;">
+    <div class="references">
+      <div class="ref-title">References &amp; Further Reading</div>
+      <ul class="ref-list">
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.iso.org/standard/65694.html" target="_blank">ISO 31000:2018 — Risk Management Guidelines</a> <span class="ref-desc">— The official ISO standard. Full text available for purchase.</span></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100426.pdf" target="_blank">ISO 31000:2018 — Free Overview Brochure (PDF)</a> <span class="ref-desc">— A free accessible summary from ISO.</span></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.pmi.org/learning/library/risk-management-definitions-frameworks-7303" target="_blank">PMI — Risk Management Definitions &amp; Frameworks</a> <span class="ref-desc">— Project Management Institute's risk management library.</span></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://hbr.org/2012/06/managing-risks-a-new-framework" target="_blank">Harvard Business Review — Managing Risks: A New Framework</a> <span class="ref-desc">— Essential reading on how modern organisations think about risk.</span></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.youtube.com/watch?v=cwjn05ntKFg" target="_blank">YouTube — ISO 31000 Risk Management Explained (Video)</a> <span class="ref-desc">— Beginner-friendly 8-minute video walkthrough. Highly recommended.</span></div></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- QUESTIONS CH1 -->
+  <div class="questions-section">
+    <div class="qs-header">Chapter 1 — Review Questions</div>
+    <div class="qs-sub">Test your understanding before moving to Chapter 2.</div>
+    <ul class="qs-list">
+      <li class="qs-item"><div class="qs-num">1</div><div><div class="qs-text">In your own words, explain what ISO 31000 means by "the effect of uncertainty on objectives." Give one example from your own work role.</div><div class="qs-type">Comprehension</div></div></li>
+      <li class="qs-item"><div class="qs-num">2</div><div><div class="qs-text">Name one risk myth that you believed before reading this chapter. What changed your view?</div><div class="qs-type">Reflection</div></div></li>
+      <li class="qs-item"><div class="qs-num">3</div><div><div class="qs-text">What is the difference between a Known-Unknown and an Unknown-Unknown? Which is more dangerous and why?</div><div class="qs-type">Critical Thinking</div></div></li>
+      <li class="qs-item"><div class="qs-num">4</div><div><div class="qs-text">Give one example of a positive risk (opportunity) that a company in your industry might face in the next 12 months.</div><div class="qs-type">Application</div></div></li>
+      <li class="qs-item"><div class="qs-num">5</div><div><div class="qs-text">Why does ISO 31000 say that risk only exists in relation to objectives? Can something be a risk without any objective? Explain your answer.</div><div class="qs-type">Analysis</div></div></li>
+    </ul>
+  </div>
+  <div class="page-footer">
+    <div class="pf-left">Chapter 1 — What is Risk?</div>
+    <div class="pf-center">· · ·</div>
+    <div class="pf-right">3 – 7</div>
+  </div>
+</div><!-- end ch1 -->
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHAPTER 2 — TYPES OF RISK
+═══════════════════════════════════════════════════════════ -->
+<div class="chapter" id="ch2">
+  <div class="chapter-header" style="background: linear-gradient(135deg, #0D2137, #1A3A5C);" data-num="02">
+    <div class="chapter-eyebrow">Chapter Two</div>
+    <div class="chapter-title">Types of Risk</div>
+    <div class="chapter-desc">Risk comes in many forms. Recognising which type you're dealing with is the first step toward managing it effectively.</div>
+  </div>
+
+  <div class="chapter-body">
+    <h2 id="ch2-six">2.1 &nbsp; The 6 Core Risk Categories</h2>
+    <p>While every organisation faces unique risks, most fall into six broadly recognised categories. Understanding these categories helps you structure conversations about risk, identify blind spots, and ensure nothing important is missed.</p>
+
+    <div class="risk-type-card"><div class="rtc-icon" style="background: linear-gradient(135deg,#1A5276,#2471A3);">🏛</div><div class="rtc-body"><div class="rtc-title">Strategic Risk</div><div class="rtc-def">The risk that your organisation's strategy fails to deliver — due to wrong decisions, missed market trends, or being out-competed. These risks originate from or impact the organisation's long-term direction.</div><div class="rtc-eg"><strong>Classic case:</strong> Kodak invented the digital camera in 1975 but chose to suppress it to protect film revenue. By 2012, they filed for bankruptcy. <a href="https://hbr.org/2016/07/kodaks-downfall-wasnt-about-technology" target="_blank" style="color:var(--teal)">Read the HBR analysis →</a></div></div></div>
+
+    <div class="risk-type-card"><div class="rtc-icon" style="background: linear-gradient(135deg,#0B7A75,#14A098);">⚙</div><div class="rtc-body"><div class="rtc-title">Operational Risk</div><div class="rtc-def">The risk of loss from inadequate or failed internal processes, people, systems — or from external events. This is the most common risk category in day-to-day organisational life.</div><div class="rtc-eg"><strong>Classic case:</strong> In 2017, a British Airways engineer accidentally switched off a data centre power supply. 75,000 passengers were stranded. Cost: £80 million. <a href="https://www.bbc.com/news/business-40105064" target="_blank" style="color:var(--teal)">BBC report →</a></div></div></div>
+
+    <div class="risk-type-card"><div class="rtc-icon" style="background: linear-gradient(135deg,#1A3A5C,#2A5A8C);">💰</div><div class="rtc-body"><div class="rtc-title">Financial Risk</div><div class="rtc-def">The risk of financial loss through fraud, bad debt, poor cash flow management, currency fluctuations, or weak financial controls. Financial risk can be both a cause and a consequence of other risk types.</div><div class="rtc-eg"><strong>Classic case:</strong> JP Morgan lost $6.2 billion in 2012 due to a single trader's excessive positions — traced back to a copy-paste error in an Excel risk model. <a href="https://www.bbc.com/news/business-20268607" target="_blank" style="color:var(--teal)">Full story →</a></div></div></div>
+
+    <div class="risk-type-card"><div class="rtc-icon" style="background: linear-gradient(135deg,#0B5563,#0F7080);">📋</div><div class="rtc-body"><div class="rtc-title">Compliance Risk</div><div class="rtc-def">The risk of legal penalties, fines, or reputational damage from failing to comply with laws, regulations, internal policies or contractual obligations. In regulated industries, this is existential.</div><div class="rtc-eg"><strong>Classic case:</strong> In 2023, Meta was fined €1.2 billion by Irish regulators for violating GDPR — the largest GDPR fine ever issued at the time. <a href="https://www.bbc.com/news/technology-65763408" target="_blank" style="color:var(--teal)">BBC report →</a></div></div></div>
+
+    <div class="risk-type-card"><div class="rtc-icon" style="background: linear-gradient(135deg,#4A1A7C,#7B2FBE);">🔐</div><div class="rtc-body"><div class="rtc-title">Cyber Risk</div><div class="rtc-def">The risk of financial loss, operational disruption or data damage from digital attacks — including ransomware, phishing, data breaches and insider threats. One of the fastest-growing risk categories globally.</div><div class="rtc-eg"><strong>Classic case:</strong> The 2021 Colonial Pipeline ransomware attack shut down fuel supply to 17 US states for 6 days. The company paid $4.4M ransom. Entry point: one compromised password with no MFA. <a href="https://www.bbc.com/news/technology-57063636" target="_blank" style="color:var(--teal)">Full story →</a></div></div></div>
+
+    <div class="risk-type-card"><div class="rtc-icon" style="background: linear-gradient(135deg,#8B2500,#C0392B);">🌐</div><div class="rtc-body"><div class="rtc-title">Reputational Risk</div><div class="rtc-def">The risk that negative publicity, poor customer experience, ethical failures or association with controversy damages your brand and erodes stakeholder trust — often triggered by failures in other risk categories.</div><div class="rtc-eg"><strong>Classic case:</strong> In 2017, a video of a United Airlines passenger being forcibly removed went viral. Within 24 hours, United's market value dropped by $1.4 billion. <a href="https://www.bbc.com/news/world-us-canada-39531473" target="_blank" style="color:var(--teal)">BBC report →</a></div></div></div>
+
+    <!-- CASCADE -->
+    <h2 id="ch2-cascade">2.2 &nbsp; How Risks Cascade</h2>
+    <p>One of the most important insights in risk management is that risks rarely occur in isolation. A single event can ripple across multiple categories simultaneously — what we call the <strong>cascade effect</strong>.</p>
+
+    <div class="callout navy">
+      <div class="callout-label">📌 Case Study: Colonial Pipeline (2021)</div>
+      <p>One ransomware attack (Cyber Risk) → Systems went offline for 6 days (Operational Risk) → $4.4M ransom paid + massive revenue losses (Financial Risk) → Fuel shortages in 17 states caused panic buying (Reputational Risk) → Regulators launched investigations into pipeline security standards (Compliance Risk).<br><br><strong>One event. Five risk categories. All triggered simultaneously.</strong><br><br>Reference: <a href="https://www.cisa.gov/news-events/news/attack-colonial-pipeline-what-weve-learned-what-weve-done" target="_blank" style="color:var(--sky)">CISA — What We Learned from the Colonial Pipeline Attack</a></p>
+    </div>
+
+    <p>This is why risk management cannot be done in silos. Organisations that manage each risk type separately, without seeing the interconnections, will always be caught off-guard when one event triggers a chain reaction.</p>
+
+  </div>
+
+  <!-- REFERENCES CH2 -->
+  <div style="padding: 0 56px;">
+    <div class="references">
+      <div class="ref-title">References &amp; Further Reading</div>
+      <ul class="ref-list">
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://hbr.org/2016/07/kodaks-downfall-wasnt-about-technology" target="_blank">HBR — Kodak's Downfall Wasn't About Technology</a></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.cisa.gov/news-events/news/attack-colonial-pipeline-what-weve-learned-what-weve-done" target="_blank">CISA — Colonial Pipeline Cyberattack Report</a></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.ibm.com/reports/data-breach" target="_blank">IBM Cost of a Data Breach Report 2024</a> <span class="ref-desc">— Annual study on the true cost of cyber incidents.</span></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.weforum.org/reports/global-risks-report-2024" target="_blank">World Economic Forum — Global Risks Report 2024</a> <span class="ref-desc">— Annual overview of the world's most significant emerging risks.</span></div></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="questions-section">
+    <div class="qs-header">Chapter 2 — Review Questions</div>
+    <div class="qs-sub">Apply the 6 risk categories to real situations.</div>
+    <ul class="qs-list">
+      <li class="qs-item"><div class="qs-num">1</div><div><div class="qs-text">Name and define the 6 core risk categories. For each one, give a real-world example from your own industry or organisation.</div><div class="qs-type">Comprehension + Application</div></div></li>
+      <li class="qs-item"><div class="qs-num">2</div><div><div class="qs-text">Why is Reputational Risk often described as a "consequence risk" rather than a "root cause risk"? Do you agree with this view?</div><div class="qs-type">Analysis</div></div></li>
+      <li class="qs-item"><div class="qs-num">3</div><div><div class="qs-text">Using the Colonial Pipeline example, trace the cascade from the initial Cyber Risk event through all the risk categories it triggered. Which risk caused the most long-term damage?</div><div class="qs-type">Case Analysis</div></div></li>
+      <li class="qs-item"><div class="qs-num">4</div><div><div class="qs-text">Think of your current or most recent role. Which of the 6 risk types is most present in your day-to-day activities? How did you manage it (even if you didn't call it "risk management")?</div><div class="qs-type">Reflection</div></div></li>
+    </ul>
+  </div>
+  <div class="page-footer">
+    <div class="pf-left">Chapter 2 — Types of Risk</div>
+    <div class="pf-center">· · ·</div>
+    <div class="pf-right">8 – 12</div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHAPTER 3 — RISK IDENTIFICATION
+═══════════════════════════════════════════════════════════ -->
+<div class="chapter" id="ch3">
+  <div class="chapter-header" style="background: linear-gradient(135deg, #0B5A50, #0B7A75);" data-num="03">
+    <div class="chapter-eyebrow">Chapter Three</div>
+    <div class="chapter-title">Initiating Risk Identification</div>
+    <div class="chapter-desc">Knowing what risk is means little if you can't find it. This chapter gives you the process and the tools to identify risks systematically and confidently.</div>
+  </div>
+
+  <div class="chapter-body">
+    <h2 id="ch3-process">3.1 &nbsp; The ISO 31000 Risk Identification Process</h2>
+    <p>Risk identification is not about brainstorming a list of bad things. It is a structured process of <strong>systematically asking what could affect your objectives — positively or negatively</strong> — before it happens.</p>
+    <p>ISO 31000 defines a clear five-step approach to risk identification:</p>
+
+    <table class="book-table">
+      <thead><tr><th>#</th><th>Step</th><th>What It Means</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td><strong>1</strong></td><td>Understand Context</td><td>What are our objectives? Who are our stakeholders? What is our environment?</td><td>A bank branch's objective is to serve customers securely within regulatory limits.</td></tr>
+        <tr><td><strong>2</strong></td><td>Identify Risk Events</td><td>What events could prevent or help us achieve those objectives?</td><td>Staff error on a transaction, system outage, competitor offering lower rates.</td></tr>
+        <tr><td><strong>3</strong></td><td>Identify Causes</td><td>What triggers each risk? Human error? Technology failure? External events?</td><td>System outage caused by: vendor update failure, power cut, cyberattack.</td></tr>
+        <tr><td><strong>4</strong></td><td>Identify Consequences</td><td>If this risk occurs — what happens? Financial loss? Regulatory fine?</td><td>System outage → customers cannot transact → complaints → regulatory review.</td></tr>
+        <tr><td><strong>5</strong></td><td>Document in Risk Register</td><td>Record every identified risk, assign an owner, set a review date.</td><td>Risk ID: R-007 | Owner: IT Manager | Review: Monthly.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <div class="callout-label">🔑 ISO 31000 Principle</div>
+      <p>Risk identification should be <strong>iterative and ongoing</strong> — not a one-off annual workshop. Risks change as your environment changes. The organisations with the best risk cultures treat risk identification as a continuous conversation, not a compliance checkbox.</p>
+    </div>
+
+    <!-- TECHNIQUES -->
+    <h2 id="ch3-techniques">3.2 &nbsp; Risk Identification Techniques</h2>
+    <p>Different situations call for different approaches. Below are the most effective risk identification techniques used in professional practice — each with a clear explanation, its advantages, its disadvantages, and guidance on when to use it.</p>
+
+    <!-- TECHNIQUE 1: STICKY NOTES -->
+    <div class="technique-card">
+      <div class="tc-header" style="background: linear-gradient(135deg, #0B7A75, #14A098);">
+        <div class="tc-icon">📌</div>
+        <div>
+          <div class="tc-name">Anonymous Sticky Notes</div>
+          <div class="tc-tag">Anonymous Individual Input · Low Barrier</div>
+        </div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-desc">Participants write risks on sticky notes (physical or digital — e.g. Miro, MURAL) without putting their name on them. All notes are posted on a shared board and grouped by category or theme.</div>
+        <div class="tc-how"><strong>How to run it:</strong> Give everyone 5–10 minutes to write risks silently. Collect all notes. Group similar ones together. Discuss as a team — but without attributing any idea to a specific person. Tools: physical Post-it notes, or digital equivalents like <a href="https://miro.com/" target="_blank" style="color:var(--teal)">Miro</a>, <a href="https://www.mural.co/" target="_blank" style="color:var(--teal)">MURAL</a>, or <a href="https://jamboard.google.com/" target="_blank" style="color:var(--teal)">Google Jamboard</a>.</div>
+        <div class="tc-pros-cons">
+          <div class="tc-pros">
+            <div class="label">✓ Advantages</div>
+            <ul class="tc-list">
+              <li>Removes fear of judgment — people share risks they'd never say aloud</li>
+              <li>Surfaces hidden organisational risks that senior staff may not see</li>
+              <li>Highly inclusive — everyone contributes equally regardless of seniority</li>
+              <li>Quick to run — even large groups can complete in 20–30 minutes</li>
+            </ul>
+          </div>
+          <div class="tc-cons">
+            <div class="label">✗ Disadvantages</div>
+            <ul class="tc-list">
+              <li>Risks noted without context — hard to understand without follow-up</li>
+              <li>Anonymous input can sometimes produce vague or irrelevant items</li>
+              <li>Doesn't naturally generate discussion around causes or consequences</li>
+              <li>Grouping and synthesis requires skilled facilitation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tc-tip">Best for: Teams where hierarchy or culture might prevent open discussion. Excellent as a first step before a more structured session.</div>
+      </div>
+    </div>
+
+    <!-- TECHNIQUE 2: GROUP DISCUSSIONS -->
+    <div class="technique-card">
+      <div class="tc-header" style="background: linear-gradient(135deg, #1A3A5C, #2A5A8C);">
+        <div class="tc-icon">🗣</div>
+        <div>
+          <div class="tc-name">Facilitated Group Discussions</div>
+          <div class="tc-tag">Open Dialogue · Real-Time Depth</div>
+        </div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-desc">A facilitator leads a structured group conversation using guiding questions such as <em>"What could prevent us from meeting our targets?"</em> or <em>"What has gone wrong before, and what almost went wrong?"</em></div>
+        <div class="tc-how"><strong>How to run it:</strong> Set a clear objective for the session. Use open questions to draw out risks. Capture all ideas without filtering. Encourage participants to build on each other's ideas. A skilled facilitator prevents dominant voices from shutting down others.</div>
+        <div class="tc-pros-cons">
+          <div class="tc-pros">
+            <div class="label">✓ Advantages</div>
+            <ul class="tc-list">
+              <li>Ideas can be explored in real-time — causes and consequences emerge naturally</li>
+              <li>Collective intelligence: one person's comment often triggers another's insight</li>
+              <li>Builds shared understanding and team ownership of risks</li>
+              <li>Flexible — can be tailored to any team size or focus area</li>
+            </ul>
+          </div>
+          <div class="tc-cons">
+            <div class="label">✗ Disadvantages</div>
+            <ul class="tc-list">
+              <li>Dominant personalities can steer or suppress discussion</li>
+              <li>Groupthink risk — teams may converge on obvious risks only</li>
+              <li>Quality depends heavily on facilitator skill</li>
+              <li>Junior staff may stay silent in the presence of senior leadership</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tc-tip">Best for: Cross-functional teams where diverse perspectives are important. Combine with anonymous sticky notes as a warm-up for maximum output.</div>
+      </div>
+    </div>
+
+    <!-- TECHNIQUE 3: WORKSHOPS -->
+    <div class="technique-card">
+      <div class="tc-header" style="background: linear-gradient(135deg, #4A1A7C, #7B2FBE);">
+        <div class="tc-icon">🏛</div>
+        <div>
+          <div class="tc-name">Structured Risk Workshops</div>
+          <div class="tc-tag">Deep Dive · Multi-Technique</div>
+        </div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-desc">A dedicated risk workshop is a planned, facilitated session — typically half a day or full day — specifically designed to identify, assess and prioritise risks for a project, department or process. Workshops usually combine multiple techniques within a single structured agenda.</div>
+        <div class="tc-how"><strong>How to run it:</strong> Pre-circulate context documents and an agenda. Open with objectives clarification. Use anonymous input first (sticky notes), then group discussion, then structured ranking. Close with agreed next steps and risk owners. See: <a href="https://www.rm-report.com/risk-workshop-guide" target="_blank" style="color:var(--teal)">Risk Workshop Facilitation Guide</a>.</div>
+        <div class="tc-pros-cons">
+          <div class="tc-pros">
+            <div class="label">✓ Advantages</div>
+            <ul class="tc-list">
+              <li>Most comprehensive technique — time and depth allow full exploration</li>
+              <li>Combines multiple approaches for maximum coverage</li>
+              <li>Produces an actionable, agreed output that participants own</li>
+              <li>Builds risk culture — education and identification happen simultaneously</li>
+            </ul>
+          </div>
+          <div class="tc-cons">
+            <div class="label">✗ Disadvantages</div>
+            <ul class="tc-list">
+              <li>Time-intensive — hard to schedule, especially across departments</li>
+              <li>Requires experienced facilitation to stay on track</li>
+              <li>Risk of "workshop fatigue" if done too frequently</li>
+              <li>Output quality drops significantly without pre-work from participants</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tc-tip">Best for: Major projects, annual risk reviews, new business units, or post-incident reviews. Not suited to frequent use — save for high-impact occasions.</div>
+      </div>
+    </div>
+
+    <!-- TECHNIQUE 4: EXPERT INTERVIEWS -->
+    <div class="technique-card">
+      <div class="tc-header" style="background: linear-gradient(135deg, #B45309, #D97706);">
+        <div class="tc-icon">🎙</div>
+        <div>
+          <div class="tc-name">Expert Interviews</div>
+          <div class="tc-tag">Individual Depth · Institutional Knowledge</div>
+        </div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-desc">One-on-one structured conversations with experienced team members, subject matter experts or senior leaders. The interviewer uses open-ended questions to surface knowledge and concerns that would never emerge in a group setting.</div>
+        <div class="tc-how"><strong>How to run it:</strong> Prepare a list of 5–8 open questions in advance (e.g. "What keeps you up at night about this project?" / "What's the one risk nobody talks about but everyone knows exists?"). Take notes carefully. Keep responses confidential unless agreed otherwise. Synthesise across all interviews afterward.</div>
+        <div class="tc-pros-cons">
+          <div class="tc-pros">
+            <div class="label">✓ Advantages</div>
+            <ul class="tc-list">
+              <li>Captures institutional knowledge held by long-serving staff</li>
+              <li>People are more candid one-on-one than in groups</li>
+              <li>Surfaces risks that culture or hierarchy prevent from surfacing publicly</li>
+              <li>Builds trust and shows risk management takes everyone's input seriously</li>
+            </ul>
+          </div>
+          <div class="tc-cons">
+            <div class="label">✗ Disadvantages</div>
+            <ul class="tc-list">
+              <li>Time-consuming — each interview can take 30–60 minutes</li>
+              <li>Risk of interviewer bias influencing the responses</li>
+              <li>Limited to the knowledge and experience of the interviewee</li>
+              <li>Synthesis across multiple interviews requires skill and careful documentation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tc-tip">Best for: Strategic risk identification, succession planning risks, and uncovering hidden risks in legacy systems or long-established processes.</div>
+      </div>
+    </div>
+
+    <!-- TECHNIQUE 5: PROCESS WALK-THROUGH (FMEA) -->
+    <div class="technique-card">
+      <div class="tc-header" style="background: linear-gradient(135deg, #0B5563, #0F7080);">
+        <div class="tc-icon">🚶</div>
+        <div>
+          <div class="tc-name">Process Walk-Through (FMEA)</div>
+          <div class="tc-tag">Step-by-Step · Operational Focus</div>
+        </div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-desc">Also known as Failure Mode and Effects Analysis (FMEA), this technique involves systematically mapping each step of a business process and asking at every stage: <em>"What could fail here? What would happen if it did?"</em> It reveals single points of failure and hidden dependencies.</div>
+        <div class="tc-how"><strong>How to run it:</strong> Draw or map the process from start to finish. At each step, ask: What could go wrong? What is the cause? What is the impact? How likely is it? Can we detect it before it causes damage? Score each failure mode and prioritise remediation. See: <a href="https://asq.org/quality-resources/fmea" target="_blank" style="color:var(--teal)">ASQ FMEA Guide</a>.</div>
+        <div class="tc-pros-cons">
+          <div class="tc-pros">
+            <div class="label">✓ Advantages</div>
+            <ul class="tc-list">
+              <li>Highly systematic — very little gets missed when done thoroughly</li>
+              <li>Reveals single points of failure that other methods miss</li>
+              <li>Produces quantifiable output — risks can be scored and compared</li>
+              <li>Deeply familiar to regulated industries (healthcare, manufacturing, finance)</li>
+            </ul>
+          </div>
+          <div class="tc-cons">
+            <div class="label">✗ Disadvantages</div>
+            <ul class="tc-list">
+              <li>Time-intensive for complex processes with many steps</li>
+              <li>Requires detailed knowledge of the process being mapped</li>
+              <li>Can feel overly technical for non-specialist audiences</li>
+              <li>Less effective for identifying strategic or external risks</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tc-tip">Best for: Operational risk identification in manufacturing, IT, healthcare, finance and any process-heavy environment. Always involve the people who actually perform the process — not just their managers.</div>
+      </div>
+    </div>
+
+    <!-- TECHNIQUE 6: CHECKLISTS -->
+    <div class="technique-card">
+      <div class="tc-header" style="background: linear-gradient(135deg, #1A6B5A, #2DC653);">
+        <div class="tc-icon">✅</div>
+        <div>
+          <div class="tc-name">Risk Identification Checklists</div>
+          <div class="tc-tag">Structured · Compliance-Ready</div>
+        </div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-desc">Pre-built checklists prompt the reviewer to consider a comprehensive list of potential risk areas relevant to their industry or function. Checklists can be developed internally from historical data or adapted from industry standards.</div>
+        <div class="tc-how"><strong>How to run it:</strong> Use or adapt an existing checklist relevant to your context (your Risk ID Checklist is included in your course materials). Work through each item systematically. Mark Yes (risk present), No (risk not applicable), or Unsure (needs further investigation). All "Yes" and "Unsure" items feed into the Risk Register.</div>
+        <div class="tc-pros-cons">
+          <div class="tc-pros">
+            <div class="label">✓ Advantages</div>
+            <ul class="tc-list">
+              <li>Fast and accessible — anyone can use a checklist with minimal training</li>
+              <li>Ensures consistency across departments and over time</li>
+              <li>Particularly useful for regulated industries requiring documented evidence</li>
+              <li>Can be built from historical incidents to prevent recurrence</li>
+            </ul>
+          </div>
+          <div class="tc-cons">
+            <div class="label">✗ Disadvantages</div>
+            <ul class="tc-list">
+              <li>Only captures risks already known — new or emerging risks will be missed</li>
+              <li>Can create a false sense of completeness ("we ticked the boxes")</li>
+              <li>Checklists go stale — must be regularly updated to remain relevant</li>
+              <li>Does not promote creative thinking or peer discussion</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tc-tip">Best for: Compliance-focused risk identification, onboarding new staff, and as a supplement to more creative techniques like workshops or group discussions.</div>
+      </div>
+    </div>
+
+    <div class="callout gold">
+      <div class="callout-label">📐 Best Practice</div>
+      <p>No single technique is sufficient on its own. The most effective risk identification programmes combine at least two or three approaches — for example, anonymous sticky notes to open up, followed by a structured group discussion, followed by a checklist to catch anything missed. <strong>Diversity of method = diversity of risks identified.</strong></p>
+    </div>
+
+  </div>
+
+  <!-- REFERENCES CH3 -->
+  <div style="padding: 0 56px;">
+    <div class="references">
+      <div class="ref-title">References &amp; Further Reading</div>
+      <ul class="ref-list">
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://asq.org/quality-resources/fmea" target="_blank">ASQ — FMEA (Failure Mode and Effects Analysis) Guide</a></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.pmi.org/learning/library/risk-identification-techniques-9698" target="_blank">PMI — Risk Identification Techniques</a></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://miro.com/templates/risk-assessment/" target="_blank">Miro — Free Risk Assessment Templates (Digital Sticky Notes)</a></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.iso.org/standard/72140.html" target="_blank">ISO 31010:2019 — Risk Assessment Techniques</a> <span class="ref-desc">— Companion standard to ISO 31000, covering identification and assessment methods in detail.</span></div></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="questions-section">
+    <div class="qs-header">Chapter 3 — Review Questions</div>
+    <div class="qs-sub">Apply risk identification thinking to your own environment.</div>
+    <ul class="qs-list">
+      <li class="qs-item"><div class="qs-num">1</div><div><div class="qs-text">Describe the 5 steps of the ISO 31000 risk identification process. Which step do you think most organisations skip, and why?</div><div class="qs-type">Comprehension + Opinion</div></div></li>
+      <li class="qs-item"><div class="qs-num">2</div><div><div class="qs-text">You are asked to identify risks for a new product launch at your company. Which two identification techniques would you use, and why? What are the trade-offs of your choice?</div><div class="qs-type">Application</div></div></li>
+      <li class="qs-item"><div class="qs-num">3</div><div><div class="qs-text">Why might anonymous sticky notes produce different results from a group discussion with the same team? Give a specific example of a risk that might only surface anonymously.</div><div class="qs-type">Critical Thinking</div></div></li>
+      <li class="qs-item"><div class="qs-num">4</div><div><div class="qs-text">What is the main limitation of using only checklists for risk identification? How would you address this limitation in a real organisation?</div><div class="qs-type">Analysis</div></div></li>
+      <li class="qs-item"><div class="qs-num">5</div><div><div class="qs-text">Pick one process from your own role. Conduct a brief mental walk-through using the FMEA approach. What is the most significant failure mode you identified?</div><div class="qs-type">Practical Exercise</div></div></li>
+    </ul>
+  </div>
+  <div class="page-footer">
+    <div class="pf-left">Chapter 3 — Initiating Risk Identification</div>
+    <div class="pf-center">· · ·</div>
+    <div class="pf-right">13 – 21</div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHAPTER 4 — GOVERNANCE, REPORTING & 3 LINES
+═══════════════════════════════════════════════════════════ -->
+<div class="chapter" id="ch4">
+  <div class="chapter-header" style="background: linear-gradient(135deg, #1A2B3C, #2A4A6C);" data-num="04">
+    <div class="chapter-eyebrow">Chapter Four</div>
+    <div class="chapter-title">Governance, Reporting &amp; 3 Lines of Defense</div>
+    <div class="chapter-desc">Understanding who owns risk — and who checks it — is fundamental to making risk management work in any organisation.</div>
+  </div>
+
+  <div class="chapter-body">
+    <h2 id="ch4-governance">4.1 &nbsp; What is Risk Governance?</h2>
+    <p>Risk governance is the <strong>framework of structures, policies and accountabilities</strong> that an organisation uses to manage risk at every level. It defines who has authority to take risks, who monitors those risks, and who holds the organisation accountable.</p>
+    <p>Good risk governance answers three critical questions:</p>
+    <ul class="book-list">
+      <li><strong>Who decides</strong> which risks to take and which to avoid?</li>
+      <li><strong>Who monitors</strong> whether risk management is actually happening?</li>
+      <li><strong>Who is accountable</strong> when something goes wrong?</li>
+    </ul>
+
+    <div class="callout navy">
+      <div class="callout-label">📌 ISO 31000 on Governance</div>
+      <p>ISO 31000:2018 states that risk management should be integrated into all organisational activities — not treated as a separate function. This means governance of risk starts at Board level and flows through every layer of the organisation. <br><br>Reference: <a href="https://www.iso.org/standard/65694.html" target="_blank" style="color:var(--sky)">ISO 31000:2018 — Principle 2: Integrated</a></p>
+    </div>
+
+    <h2 id="ch4-lines">4.2 &nbsp; The 3 Lines of Defense Model</h2>
+    <p>The 3 Lines of Defense (now formally known as the <strong>Three Lines Model</strong> per the IIA's 2020 update) is the most widely adopted framework for organising risk ownership, oversight and assurance in an organisation.</p>
+
+    <div class="lines-diagram">
+      <div class="lines-board">🏛 &nbsp; Board &amp; Senior Management — Set Strategy · Define Risk Appetite · Govern All Three Lines</div>
+      <div class="lines-row">
+        <div class="line-block" style="background: linear-gradient(160deg, #0B7A75, #14A098);">
+          <div class="lb-num">1st</div>
+          <div class="lb-label">Line</div>
+          <div class="lb-title">Business Operations</div>
+          <div class="lb-desc">Own and manage the risks in their daily activities. Execute controls. Report issues promptly.</div>
+          <div class="lb-who">Sales · Operations · Finance · HR · IT · All front-line staff</div>
+        </div>
+        <div class="line-block" style="background: linear-gradient(160deg, #1A3A5C, #2A5A8C);">
+          <div class="lb-num">2nd</div>
+          <div class="lb-label">Line</div>
+          <div class="lb-title">Risk &amp; Compliance</div>
+          <div class="lb-desc">Set the rules. Monitor 1st Line effectiveness. Advise and challenge on risk management.</div>
+          <div class="lb-who">Risk Management · Compliance · Legal · Information Security</div>
+        </div>
+        <div class="line-block" style="background: linear-gradient(160deg, #4A1A7C, #7B2FBE);">
+          <div class="lb-num">3rd</div>
+          <div class="lb-label">Line</div>
+          <div class="lb-title">Internal Audit</div>
+          <div class="lb-desc">Independently test whether Lines 1 and 2 are working. Report directly to the Board.</div>
+          <div class="lb-who">Internal Audit · Sometimes External Auditors</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout gold">
+      <div class="callout-label">💡 Key Insight</div>
+      <p>The most important line is the <strong>1st Line</strong> — because it is where risks are actually created and where controls are actually executed. The 2nd and 3rd Lines exist to support and verify the 1st Line, not to do its job for it. If the 1st Line is weak, no amount of oversight from the 2nd and 3rd Lines can compensate.</p>
+    </div>
+
+    <h2 id="ch4-reporting">4.3 &nbsp; Risk Reporting &amp; Escalation</h2>
+    <p>Identifying a risk means nothing if it is not communicated to the right people at the right time. Risk reporting is the process of <strong>summarising, presenting and escalating risk information</strong> so that decision-makers can act.</p>
+    <p>Effective risk reporting follows three principles:</p>
+
+    <div class="concept-grid">
+      <div class="concept-card">
+        <span class="cc-icon">⏱</span>
+        <div class="cc-title">Timeliness</div>
+        <div class="cc-body">Risks must be reported quickly enough for the organisation to act. A risk reported after it has materialised into a loss is intelligence, not risk management.</div>
+      </div>
+      <div class="concept-card navy-card">
+        <span class="cc-icon">🎯</span>
+        <div class="cc-title">Relevance</div>
+        <div class="cc-body">Reports should contain what decision-makers need — not everything that was identified. Boards need strategic-level information; operational managers need operational detail.</div>
+      </div>
+      <div class="concept-card gold-card">
+        <span class="cc-icon">📊</span>
+        <div class="cc-title">Clarity</div>
+        <div class="cc-body">Risk information should be presented visually and simply. Heatmaps, dashboards and traffic-light ratings make risk data accessible to non-specialists.</div>
+      </div>
+      <div class="concept-card">
+        <span class="cc-icon">🔄</span>
+        <div class="cc-title">Escalation Path</div>
+        <div class="cc-body">Every risk should have a clear escalation path — who to tell, in what format, and within what timeframe if the risk materialises or exceeds tolerance.</div>
+      </div>
+    </div>
+
+    <div class="real-world">
+      <div class="rw-label">📌 Real-World Reference</div>
+      <div class="rw-title">IIA — The Three Lines Model (2020 Update)</div>
+      <div class="rw-body">In 2020 the Institute of Internal Auditors updated the classic "Three Lines of Defense" to the "Three Lines Model" — shifting emphasis from defense to value creation and collaboration. The update recognises that the three lines should actively work together, not function as separate silos.<br><br><a href="https://www.theiia.org/en/standards/three-lines-model/" target="_blank" style="color:var(--teal)">Read the full IIA Three Lines Model →</a></div>
+    </div>
+  </div>
+
+  <!-- REFERENCES CH4 -->
+  <div style="padding: 0 56px;">
+    <div class="references">
+      <div class="ref-title">References &amp; Further Reading</div>
+      <ul class="ref-list">
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.theiia.org/en/standards/three-lines-model/" target="_blank">IIA — The Three Lines Model (2020)</a> <span class="ref-desc">— The definitive update to the 3 Lines of Defense framework.</span></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.bis.org/publ/bcbs328.htm" target="_blank">Basel Committee — Three Lines of Defense in Financial Services</a> <span class="ref-desc">— How regulators apply the model in banking.</span></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.coso.org/Pages/erm.aspx" target="_blank">COSO — Enterprise Risk Management Framework</a> <span class="ref-desc">— Complementary governance framework used widely alongside ISO 31000.</span></div></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="questions-section">
+    <div class="qs-header">Chapter 4 — Review Questions</div>
+    <div class="qs-sub">Test your understanding of governance, reporting and the 3 Lines model.</div>
+    <ul class="qs-list">
+      <li class="qs-item"><div class="qs-num">1</div><div><div class="qs-text">In the 3 Lines of Defense model, which line are YOU currently in at your organisation? What are your specific risk responsibilities in that line?</div><div class="qs-type">Reflection + Application</div></div></li>
+      <li class="qs-item"><div class="qs-num">2</div><div><div class="qs-text">Why is the 1st Line considered the most important? What happens to the overall model if the 1st Line is weak?</div><div class="qs-type">Analysis</div></div></li>
+      <li class="qs-item"><div class="qs-num">3</div><div><div class="qs-text">Name three characteristics of effective risk reporting. For each one, give an example of what poor reporting in that area looks like.</div><div class="qs-type">Comprehension + Examples</div></div></li>
+      <li class="qs-item"><div class="qs-num">4</div><div><div class="qs-text">The IIA updated its model from "3 Lines of Defense" to "3 Lines Model" in 2020, shifting from a defense-first to a value-creation mindset. What do you think this change signals about how organisations are expected to think about risk?</div><div class="qs-type">Critical Thinking</div></div></li>
+    </ul>
+  </div>
+  <div class="page-footer">
+    <div class="pf-left">Chapter 4 — Governance, Reporting &amp; 3 Lines of Defense</div>
+    <div class="pf-center">· · ·</div>
+    <div class="pf-right">22 – 26</div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHAPTER 5 — CASE STUDY: NOVATECH
+═══════════════════════════════════════════════════════════ -->
+<div class="chapter" id="ch5">
+  <div class="chapter-header" style="background: linear-gradient(135deg, #3D1A6A, #5A189A);" data-num="05">
+    <div class="chapter-eyebrow">Chapter Five</div>
+    <div class="chapter-title">Case Study:<br>NovaTech Solutions</div>
+    <div class="chapter-desc">A corporate organisation faces a perfect storm of risk events across a single Monday morning. Apply everything from Chapters 1–4 to analyse what went wrong — and why.</div>
+  </div>
+
+  <div class="chapter-body">
+    <h2 id="ch5-background">5.1 &nbsp; Company Background</h2>
+    <p><strong>NovaTech Solutions</strong> is a mid-sized financial services firm with 1,200 employees across three regional offices. The company manages AED 2.5 billion in assets for 400 institutional and high-net-worth clients. It is regulated by the local financial authority and operates a core banking system, a CRM platform and an online client portal.</p>
+    <p>NovaTech has a Risk Management department (2nd Line), an Internal Audit function (3rd Line), and approximately 900 front-line staff in client-facing and operational roles (1st Line).</p>
+
+    <div class="callout navy">
+      <div class="callout-label">📘 Reading Instruction</div>
+      <p>As you read through the events below, for each event ask yourself: <strong>(1) What type of risk is this?</strong> (use the 6 categories from Chapter 2) and <strong>(2) Which Line of Defense should have caught or prevented it?</strong></p>
+    </div>
+
+    <h2 id="ch5-events">5.2 &nbsp; The Events Unfold</h2>
+    <p>On a Monday in October, NovaTech experienced the following sequence of events:</p>
+
+    <table class="book-table">
+      <thead><tr><th>Time</th><th>Event</th><th>Risk Type</th></tr></thead>
+      <tbody>
+        <tr><td><strong>8:00 AM</strong></td><td>A phishing email reaches 40 staff inboxes. Three employees click the malicious link and enter their credentials. Attacker gains access to internal systems.</td><td>Cyber Risk</td></tr>
+        <tr><td><strong>9:30 AM</strong></td><td>The client-facing portal goes offline. 400 clients cannot access their accounts or execute transactions. Helpdesk lines are overwhelmed.</td><td>Operational Risk</td></tr>
+        <tr><td><strong>10:15 AM</strong></td><td>Compliance receives an alert — client data may have been exfiltrated during the breach. GDPR notification obligations clock starts.</td><td>Compliance Risk</td></tr>
+        <tr><td><strong>11:00 AM</strong></td><td>A journalist contacts NovaTech's communications team — a client has leaked news of the outage on social media. Press enquiries begin.</td><td>Reputational Risk</td></tr>
+        <tr><td><strong>12:30 PM</strong></td><td>The regulator calls, demanding an incident report within 24 hours. Internal Audit's six-month-old report flagging weak cyber controls is circulated.</td><td>Compliance + Governance Failure</td></tr>
+        <tr><td><strong>2:00 PM</strong></td><td>Three major clients call their relationship managers threatening to withdraw their portfolios. AED 180 million in assets at risk of departure.</td><td>Financial Risk</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="ch5-analysis">5.3 &nbsp; Analysis &amp; Lessons Learned</h2>
+    <p>What makes the NovaTech case particularly instructive is that all three lines of defense failed simultaneously:</p>
+
+    <div class="real-world">
+      <div class="rw-label">⚠ 1st Line Failure</div>
+      <div class="rw-title">Business Operations — The Front Line Did Not Hold</div>
+      <div class="rw-body">Three employees clicked a phishing link — indicating inadequate cybersecurity awareness training. The IT team had no real-time detection of the breach. The client portal had no failover system. These are all 1st Line controls that did not exist or were not working.</div>
+    </div>
+
+    <div class="real-world">
+      <div class="rw-label">⚠ 2nd Line Failure</div>
+      <div class="rw-title">Risk &amp; Compliance — Oversight Was Reactive, Not Proactive</div>
+      <div class="rw-body">The Compliance team was aware of GDPR obligations but had no real-time data monitoring. There was no documented cyber incident response plan. The Risk Management team had not translated their awareness of cyber threats into concrete controls for the 1st Line.</div>
+    </div>
+
+    <div class="real-world">
+      <div class="rw-label">⚠ 3rd Line Failure</div>
+      <div class="rw-title">Internal Audit — The Warning Was Given and Ignored</div>
+      <div class="rw-body">Internal Audit had flagged inadequate cybersecurity controls in a report six months earlier. Management acknowledged the finding and accepted the risk — without implementing remediation. This is one of the most common governance failures in practice: identifying a risk and then doing nothing about it.</div>
+    </div>
+
+    <div class="callout gold">
+      <div class="callout-label">📐 The Deepest Lesson</div>
+      <p><strong>Risk management is only as good as the culture that supports it.</strong> NovaTech had a Risk Management department, a Compliance function and an Internal Audit team. They had all three lines — on paper. But the Board did not act on the audit finding, the 2nd Line had no real enforcement mechanism, and the 1st Line had no awareness that cybersecurity was their responsibility too. Having the structure means nothing without the culture.</p>
+    </div>
+
+  </div>
+
+  <!-- REFERENCES CH5 -->
+  <div style="padding: 0 56px;">
+    <div class="references">
+      <div class="ref-title">References &amp; Further Reading</div>
+      <ul class="ref-list">
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.cisa.gov/news-events/news/attack-colonial-pipeline-what-weve-learned-what-weve-done" target="_blank">CISA — Colonial Pipeline Attack Lessons Learned</a> <span class="ref-desc">— Real-world parallel to the NovaTech scenario.</span></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.enisa.europa.eu/publications/enisa-threat-landscape-2023" target="_blank">ENISA Threat Landscape 2023</a> <span class="ref-desc">— European cybersecurity agency's annual threat report.</span></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://hbr.org/2020/09/build-a-risk-intelligent-culture" target="_blank">HBR — Building a Risk-Intelligent Culture</a> <span class="ref-desc">— The cultural dimension of risk management that NovaTech lacked.</span></div></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="questions-section">
+    <div class="qs-header">Chapter 5 — Case Study Questions</div>
+    <div class="qs-sub">This is your final assessment for Part 1. Answer all five questions thoughtfully.</div>
+    <ul class="qs-list">
+      <li class="qs-item"><div class="qs-num">1</div><div><div class="qs-text">Map each of the six NovaTech events to one of the 6 risk categories from Chapter 2. Were any events caused by more than one risk type simultaneously?</div><div class="qs-type">Comprehension + Application</div></div></li>
+      <li class="qs-item"><div class="qs-num">2</div><div><div class="qs-text">Which line of defense failed most severely in the NovaTech case? Build your argument using evidence from the case study.</div><div class="qs-type">Analysis + Evidence</div></div></li>
+      <li class="qs-item"><div class="qs-num">3</div><div><div class="qs-text">If you were NovaTech's Risk Manager (2nd Line), what three specific risk controls would you have implemented before October to prevent this cascade?</div><div class="qs-type">Solution Design</div></div></li>
+      <li class="qs-item"><div class="qs-num">4</div><div><div class="qs-text">The Board accepted the Internal Audit finding on weak cyber controls without acting on it. What does this tell you about the risk culture at NovaTech? How would you change it?</div><div class="qs-type">Critical Thinking</div></div></li>
+      <li class="qs-item"><div class="qs-num">5</div><div><div class="qs-text">Think about your own organisation. Is there an Internal Audit or risk finding that has been acknowledged but not acted upon? What is the consequence of that inaction — and what would it take to change it?</div><div class="qs-type">Personal Reflection</div></div></li>
+    </ul>
+  </div>
+  <div class="page-footer">
+    <div class="pf-left">Chapter 5 — Case Study: NovaTech Solutions</div>
+    <div class="pf-center">· · ·</div>
+    <div class="pf-right">27 – 30</div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHAPTER 6 — RISK CULTURE & HUMAN FACTORS
+═══════════════════════════════════════════════════════════ -->
+<div class="chapter" id="ch6">
+  <div class="chapter-header" style="background: linear-gradient(135deg, #1A3A2A, #2A6B4A);" data-num="06">
+    <div class="chapter-eyebrow">Chapter Six</div>
+    <div class="chapter-title">Risk Culture &amp;<br>Human Factors</div>
+    <div class="chapter-desc">You can have the best risk framework in the world — and still fail. Because risk management ultimately depends on people. This chapter explains why.</div>
+  </div>
+
+  <div class="chapter-body">
+
+    <h2 id="ch6-culture">6.1 &nbsp; What is Risk Culture?</h2>
+    <p>Risk culture is <strong>the shared values, beliefs, attitudes and behaviours</strong> that shape how an organisation's people think about and respond to risk. It is the invisible force that determines whether risk management actually happens in practice — or only on paper.</p>
+
+    <div class="iso-box">
+      <div class="iso-label">Institute of Risk Management — Definition</div>
+      <div class="iso-text">"Risk culture is the norms of behaviour for individuals and groups within an organisation that determine the collective ability to identify, understand, openly discuss, escalate and act on the organisation's current and future risks."</div>
+      <div class="iso-ref">Source: IRM — Risk Culture: Resources for Practitioners — <a href="https://www.theirm.org/knowledge-and-resources/thought-leadership/risk-culture/" target="_blank" style="color:#7ECECA">theirm.org/risk-culture</a></div>
+    </div>
+
+    <p>In simple terms: if the framework is the skeleton of risk management, <strong>culture is the muscle</strong>. The skeleton defines the structure — but culture is what makes it move.</p>
+
+    <p>Risk culture is not something that can be designed in a policy document. It develops over time through leadership behaviour, how incidents are handled, whether people feel safe raising concerns, and whether risk is seen as a shared responsibility or someone else's problem.</p>
+
+    <div class="callout gold">
+      <div class="callout-label">💡 Key Insight</div>
+      <p>The NovaTech case study in Chapter 5 is ultimately a <strong>culture failure</strong>, not a process failure. The processes existed. The audit finding existed. The risk was known. But the culture did not support acting on it — and that is what caused the damage.</p>
+    </div>
+
+    <h2 id="ch6-why">6.2 &nbsp; Why Culture Trumps Process</h2>
+    <p>Organisations often invest heavily in risk frameworks, policies and tools — and then wonder why risks keep materialising. The answer, almost always, comes back to culture.</p>
+    <p>Consider the following scenario: a junior analyst notices something unusual in a client account that could indicate fraud. They have three choices:</p>
+
+    <div class="concept-grid">
+      <div class="concept-card red-card">
+        <span class="cc-icon">😶</span>
+        <div class="cc-title">Stay Silent</div>
+        <div class="cc-body">In a blame-driven culture, raising concerns is risky for the person raising them. They fear looking incompetent, being dismissed, or damaging their career. So they say nothing.</div>
+      </div>
+      <div class="concept-card" style="border-top-color: var(--gold);">
+        <span class="cc-icon">🤔</span>
+        <div class="cc-title">Mention It Quietly</div>
+        <div class="cc-body">In a moderate culture, they might mention it informally to a colleague — but never formally escalate. The risk stays hidden and unmanaged.</div>
+      </div>
+      <div class="concept-card" style="border-top-color: var(--green);">
+        <span class="cc-icon">✋</span>
+        <div class="cc-title">Escalate Immediately</div>
+        <div class="cc-body">In a strong risk culture, they raise it formally, knowing they will be listened to, supported and thanked for speaking up — regardless of the outcome.</div>
+      </div>
+      <div class="concept-card navy-card">
+        <span class="cc-icon">📋</span>
+        <div class="cc-title">The Process Says...</div>
+        <div class="cc-body">All three organisations have the same escalation process in their policy document. The process didn't change the outcome. Culture did.</div>
+      </div>
+    </div>
+
+    <div class="real-world">
+      <div class="rw-label">📌 Real-World Reference</div>
+      <div class="rw-title">Boeing 737 MAX — The Culture Behind the Crisis</div>
+      <div class="rw-body">
+        Congressional investigations into the Boeing 737 MAX crashes (2018–2019, 346 deaths) found a culture where engineers who raised safety concerns were pressured to stay quiet, production schedules were prioritised over safety reporting, and management dismissed risk signals from its own employees. Two crashes and $20 billion in losses later, Boeing's culture — not just its processes — was identified as the root cause.<br><br>
+        <a href="https://www.bbc.com/news/business-53905959" target="_blank" style="color:var(--teal)">BBC — Boeing's Cultural Problem (bbc.com) →</a><br>
+        <a href="https://www.hbr.org/2019/11/lessons-from-the-737-max-disaster" target="_blank" style="color:var(--teal)">HBR — Lessons from the 737 MAX Disaster →</a>
+      </div>
+    </div>
+
+    <h2 id="ch6-human">6.3 &nbsp; Human Factors in Risk</h2>
+    <p>Research consistently shows that <strong>73% of risk events involve human error</strong> as either a direct cause or a contributing factor (IBM, 2023). Yet most risk frameworks focus almost entirely on systems, processes and controls — and barely address the human beings operating them.</p>
+
+    <p>Human factors in risk fall into three broad categories:</p>
+
+    <h3>Individual Factors</h3>
+    <p>These are characteristics of the individual that affect risk behaviour — including skill, knowledge, fatigue, stress, personality and motivation.</p>
+
+    <table class="book-table">
+      <thead><tr><th>Factor</th><th>How It Creates Risk</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Fatigue</strong></td><td>Reduces attention, increases errors and slows response time</td><td>A finance team member processes payments late at night after a 14-hour day and makes a transfer error</td></tr>
+        <tr><td><strong>Overconfidence</strong></td><td>People overestimate their own ability to manage a situation</td><td>A senior trader takes an oversized position because "I've done this a hundred times"</td></tr>
+        <tr><td><strong>Knowledge gaps</strong></td><td>Staff don't know what they don't know — and therefore don't flag risks they can't see</td><td>A new joiner doesn't escalate a GDPR concern because they don't recognise it as one</td></tr>
+        <tr><td><strong>Complacency</strong></td><td>Familiarity breeds inattention — routine tasks receive less care over time</td><td>A system administrator stops checking backup logs because "it's always been fine"</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Team &amp; Group Factors</h3>
+    <p>Risk behaviour is shaped not just by individuals but by the groups they work in — and the social dynamics within those groups.</p>
+
+    <div class="concept-grid">
+      <div class="concept-card red-card">
+        <span class="cc-icon">🐑</span>
+        <div class="cc-title">Groupthink</div>
+        <div class="cc-body">When teams prioritise harmony and agreement over honest assessment. Dissenting views are suppressed. Risks that "everyone knows about but nobody says" never get escalated. Classic in leadership teams and boards.</div>
+      </div>
+      <div class="concept-card navy-card">
+        <span class="cc-icon">📢</span>
+        <div class="cc-title">Normalisation of Deviance</div>
+        <div class="cc-body">When repeated violations of procedure that "don't cause a problem" gradually become accepted as normal. Teams stop seeing them as risks. The NASA Challenger disaster was partly attributed to this — engineers had accepted O-ring erosion as "acceptable" over time.</div>
+      </div>
+      <div class="concept-card" style="border-top-color: var(--gold);">
+        <span class="cc-icon">🤐</span>
+        <div class="cc-title">Silence of the Lambs Effect</div>
+        <div class="cc-body">Junior staff who see risks clearly but lack the seniority or confidence to raise them formally. This is one of the most common sources of undiscovered organisational risk — and one of the best arguments for anonymous risk identification techniques.</div>
+      </div>
+      <div class="concept-card" style="border-top-color: var(--green);">
+        <span class="cc-icon">🔄</span>
+        <div class="cc-title">Diffusion of Responsibility</div>
+        <div class="cc-body">When everyone assumes someone else is managing the risk. "That's the Risk Manager's job" — the myth we debunked in Chapter 1 — is actually a cultural manifestation of diffusion of responsibility.</div>
+      </div>
+    </div>
+
+    <h3>Organisational Factors</h3>
+    <p>Beyond individuals and teams, the organisation itself creates conditions that either encourage or suppress good risk behaviour:</p>
+
+    <ul class="book-list">
+      <li><strong>Leadership behaviour</strong> — If leaders ignore risk frameworks themselves, staff will too. Culture flows downward. What the CEO tolerates becomes what the organisation accepts.</li>
+      <li><strong>Incentive structures</strong> — If bonuses reward short-term results without regard for risk-taking, people will take risks to hit targets. The 2008 financial crisis was partly driven by bonus structures that rewarded volume over risk quality.</li>
+      <li><strong>Communication channels</strong> — If there is no easy, safe way to report a risk concern, risks stay hidden. Anonymous hotlines, open-door policies and speak-up programmes are structural tools that support cultural change.</li>
+      <li><strong>Response to incidents</strong> — How leadership handles the first escalated risk signal sets the tone for every future one. Blame leads to silence. Learning leads to openness.</li>
+    </ul>
+
+    <h2 id="ch6-bias">6.4 &nbsp; Cognitive Biases That Create Risk</h2>
+    <p>One of the most powerful — and most underappreciated — human factors in risk is <strong>cognitive bias</strong>. These are systematic errors in thinking that affect how people perceive, process and respond to risk information. They are not signs of stupidity. They are features of how the human brain works — and every professional is susceptible to them.</p>
+
+    <div class="technique-card">
+      <div class="tc-header" style="background: linear-gradient(135deg, #2C3E50, #4A6FA5);">
+        <div class="tc-icon">🧠</div>
+        <div>
+          <div class="tc-name">Optimism Bias</div>
+          <div class="tc-tag">Most common bias in risk management</div>
+        </div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-desc">The tendency to overestimate the likelihood of positive events and underestimate the likelihood of negative ones. People consistently believe they are less likely to experience negative events than others around them.</div>
+        <div class="tc-how"><strong>In practice:</strong> "Our project won't have delays." "We've never had a data breach." "That won't happen to us." These are optimism bias speaking — not evidence-based risk assessment. Studies show 80% of drivers rate themselves as "above average" — statistically impossible.</div>
+        <div class="tc-tip">How to counter it: Require evidence-based probability estimates. Use historical incident data rather than gut feeling. Run pre-mortems: "Assume this project has failed — why?"</div>
+      </div>
+    </div>
+
+    <div class="technique-card">
+      <div class="tc-header" style="background: linear-gradient(135deg, #4A2C2A, #8B3A35);">
+        <div class="tc-icon">⚓</div>
+        <div>
+          <div class="tc-name">Anchoring Bias</div>
+          <div class="tc-tag">Distorts risk scoring and estimates</div>
+        </div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-desc">Over-reliance on the first piece of information received when making a decision. Once an anchor is set, subsequent judgements are heavily influenced by it — even when the anchor is arbitrary or incorrect.</div>
+        <div class="tc-how"><strong>In practice:</strong> If a risk is initially scored as "low" in a register, it tends to stay low — even when new evidence suggests it should be higher. The initial score becomes the anchor. Teams spend more time defending the original estimate than updating it.</div>
+        <div class="tc-tip">How to counter it: Regularly challenge existing risk scores with fresh eyes. Bring in people who weren't involved in the original assessment to review entries.</div>
+      </div>
+    </div>
+
+    <div class="technique-card">
+      <div class="tc-header" style="background: linear-gradient(135deg, #1A4A3A, #2A7A5A);">
+        <div class="tc-icon">📰</div>
+        <div>
+          <div class="tc-name">Availability Bias</div>
+          <div class="tc-tag">Skews likelihood estimates toward recent events</div>
+        </div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-desc">The tendency to judge the probability of an event based on how easily examples come to mind — usually driven by recency, vividness or media coverage. Events we can remember easily feel more likely than they actually are.</div>
+        <div class="tc-how"><strong>In practice:</strong> After a major data breach in the news, organisations suddenly prioritise cyber risk — regardless of their actual exposure. After a quiet period with no incidents, the same risks feel less urgent. The risk hasn't changed — only our recent experience of it has.</div>
+        <div class="tc-tip">How to counter it: Base risk assessments on data and statistics, not recent headlines. Maintain consistent review schedules regardless of recent incidents in the news.</div>
+      </div>
+    </div>
+
+    <div class="technique-card">
+      <div class="tc-header" style="background: linear-gradient(135deg, #3A1A5A, #6A2A9A);">
+        <div class="tc-icon">🙈</div>
+        <div>
+          <div class="tc-name">Normalcy Bias</div>
+          <div class="tc-tag">Underestimation of catastrophic events</div>
+        </div>
+      </div>
+      <div class="tc-body">
+        <div class="tc-desc">The tendency to underestimate the possibility of a severe disruption and its potential impact — because it has never happened before. People assume that because a disaster hasn't occurred, it won't occur.</div>
+        <div class="tc-how"><strong>In practice:</strong> "We've been operating for 20 years with no major incident." This is not evidence that the risk is low — it may just mean you've been fortunate. Normalcy bias is particularly dangerous for low-frequency, high-impact risks like pandemics, cyberattacks on critical infrastructure and financial system shocks.</div>
+        <div class="tc-tip">How to counter it: Use scenario planning and stress testing. Ask: "What would happen if our least likely high-impact risk materialised tomorrow?" Make the hypothetical feel concrete.</div>
+      </div>
+    </div>
+
+    <h2 id="ch6-building">6.5 &nbsp; Building a Healthy Risk Culture</h2>
+    <p>Risk culture cannot be mandated with a policy. It is built gradually — through consistent leadership behaviour, structural enablers and genuine commitment to learning. Here is what it looks like in practice:</p>
+
+    <table class="book-table">
+      <thead><tr><th>Cultural Enabler</th><th>What It Looks Like in Practice</th><th>Red Flag (Opposite)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Psychological Safety</strong></td><td>People raise concerns without fear of blame or career consequences. Leaders thank staff for escalating bad news.</td><td>"Don't bring me problems, bring me solutions." Concerns are dismissed or punished.</td></tr>
+        <tr><td><strong>Leadership Role-Modelling</strong></td><td>Senior leaders visibly follow risk processes, attend risk training, and openly discuss their own uncertainty.</td><td>Leaders bypass controls "because they're senior." Risk is seen as a junior concern.</td></tr>
+        <tr><td><strong>Learning from Incidents</strong></td><td>Every incident triggers a no-blame root cause analysis. Findings are shared across the organisation.</td><td>Incidents are hushed up or blamed on individuals. The same mistakes recur.</td></tr>
+        <tr><td><strong>Clear Risk Ownership</strong></td><td>Every identified risk has a named owner who is accountable and regularly reviews their risks.</td><td>Risks are "owned" by the Risk Manager — meaning nobody owns them.</td></tr>
+        <tr><td><strong>Regular Risk Conversations</strong></td><td>Risk is a standing agenda item in team meetings — not just an annual exercise.</td><td>Risk register last updated 11 months ago. Nobody knows where it is.</td></tr>
+        <tr><td><strong>Speak-Up Mechanisms</strong></td><td>Anonymous reporting channels, open-door policies and whistleblower protection are actively promoted and used.</td><td>The whistleblower hotline exists on paper. Nobody trusts it or uses it.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <div class="callout-label">🔑 What Good Looks Like</div>
+      <p>In organisations with strong risk cultures, risk management is not a compliance exercise that happens in a separate department. It is <strong>how decisions are made everywhere, every day</strong>. It is the question a manager asks before approving a project. It is the conversation a team has when a near-miss occurs. It is the instinct a new joiner develops in their first six months — because the culture around them demonstrates it constantly.</p>
+    </div>
+
+    <div class="real-world">
+      <div class="rw-label">📌 Real-World Reference</div>
+      <div class="rw-title">Google — Project Aristotle and Psychological Safety</div>
+      <div class="rw-body">
+        In 2012, Google launched Project Aristotle — a study of what made some teams perform significantly better than others. After analysing 180 teams, the single biggest factor was not skill, experience or strategy. It was <strong>psychological safety</strong> — the belief that team members could take risks, raise concerns and admit mistakes without being punished. High-performing teams had cultures where speaking up was encouraged and valued.<br><br>
+        This finding has profound implications for risk management: the teams best at managing risk are not those with the most elaborate frameworks — they are the ones where people feel safe enough to say "I'm worried about this."<br><br>
+        <a href="https://rework.withgoogle.com/guides/understanding-team-effectiveness/steps/identify-dynamics-of-effective-teams/" target="_blank" style="color:var(--teal)">Google re:Work — Understanding Team Effectiveness →</a>
+      </div>
+    </div>
+
+    <div class="callout navy">
+      <div class="callout-label">📌 What You Can Do — Starting Now</div>
+      <p>You don't need to be in a leadership position to build risk culture. As a new professional, you can contribute immediately by:</p>
+      <ul class="book-list" style="margin-top: 10px; margin-bottom: 0;">
+        <li>Asking "what could go wrong?" before starting new tasks or projects</li>
+        <li>Raising concerns early — even when it feels uncomfortable</li>
+        <li>Sharing near-misses with your team so others can learn</li>
+        <li>Treating risk as part of your role — not someone else's job</li>
+        <li>Recognising your own cognitive biases — especially optimism bias</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- REFERENCES CH6 -->
+  <div style="padding: 0 56px;">
+    <div class="references">
+      <div class="ref-title">References &amp; Further Reading</div>
+      <ul class="ref-list">
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.theirm.org/knowledge-and-resources/thought-leadership/risk-culture/" target="_blank">IRM — Risk Culture: Resources for Practitioners</a> <span class="ref-desc">— The definitive practitioner guide to risk culture.</span></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://rework.withgoogle.com/guides/understanding-team-effectiveness/steps/identify-dynamics-of-effective-teams/" target="_blank">Google re:Work — Project Aristotle (Psychological Safety)</a></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://hbr.org/2019/11/lessons-from-the-737-max-disaster" target="_blank">HBR — Lessons from the Boeing 737 MAX Disaster</a></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.ibm.com/reports/data-breach" target="_blank">IBM Cost of a Data Breach Report 2024</a> <span class="ref-desc">— Statistics on human error as a root cause of breaches.</span></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/optimism-bias/" target="_blank">Behavioural Economics — Optimism Bias Explained</a></div></li>
+        <li class="ref-item"><span class="ref-bullet">▸</span><div><a href="https://www.fsb.org/2014/04/r_140407b/" target="_blank">Financial Stability Board — Guidance on Supervisory Interaction with Financial Institutions on Risk Culture</a></div></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="questions-section">
+    <div class="qs-header">Chapter 6 — Review Questions</div>
+    <div class="qs-sub">Reflect on culture and human behaviour in your own environment.</div>
+    <ul class="qs-list">
+      <li class="qs-item"><div class="qs-num">1</div><div><div class="qs-text">How would you describe the risk culture in your current or most recent organisation? What evidence are you basing this on? Is it strong, moderate or weak — and why?</div><div class="qs-type">Reflection</div></div></li>
+      <li class="qs-item"><div class="qs-num">2</div><div><div class="qs-text">Think of a time when you or someone you know stayed silent about a risk or concern. What was the cultural reason behind that silence? What would have needed to be different for it to be raised?</div><div class="qs-type">Personal Reflection</div></div></li>
+      <li class="qs-item"><div class="qs-num">3</div><div><div class="qs-text">Of the four cognitive biases covered in this chapter — Optimism, Anchoring, Availability and Normalcy — which do you think is most dangerous in a financial services environment? Build a case for your answer.</div><div class="qs-type">Critical Thinking</div></div></li>
+      <li class="qs-item"><div class="qs-num">4</div><div><div class="qs-text">Google's Project Aristotle found that psychological safety — not skill or experience — was the biggest predictor of team performance. How does this finding change the way you think about risk identification in a group setting?</div><div class="qs-type">Application</div></div></li>
+      <li class="qs-item"><div class="qs-num">5</div><div><div class="qs-text">Design a 30-day "risk culture starter plan" for a new joiner joining your team. What three specific behaviours would you encourage them to demonstrate in their first month to build good risk habits from day one?</div><div class="qs-type">Practical Design</div></div></li>
+    </ul>
+  </div>
+  <div class="page-footer">
+    <div class="pf-left">Chapter 6 — Risk Culture &amp; Human Factors</div>
+    <div class="pf-center">· · ·</div>
+    <div class="pf-right">31 – 38</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════ -->
+<div id="index">
+  <div class="chapter-header" style="background: var(--navy); padding: 40px 56px;" data-num="">
+    <div class="chapter-eyebrow">Back Matter</div>
+    <div class="chapter-title" style="font-size: 36px;">Index</div>
+    <div class="chapter-desc">Key terms and concepts — with chapter references.</div>
+  </div>
+
+  <div class="index-page">
+    <div class="index-grid">
+      <div>
+        <div class="index-letter">A</div>
+        <div class="index-term">Airbnb (case study)<span class="ipage">Ch.1 / p.4</span></div>
+        <div class="index-term">Anchoring Bias<span class="ipage">Ch.6 / p.35</span></div>
+        <div class="index-term">Anonymous sticky notes<span class="ipage">Ch.3 / p.15</span></div>
+        <div class="index-term">Assessment techniques<span class="ipage">Ch.3 / p.15</span></div>
+        <div class="index-term">Availability Bias<span class="ipage">Ch.6 / p.36</span></div>
+
+        <div class="index-letter">B</div>
+        <div class="index-term">Black Swan<span class="ipage">Ch.1 / p.5</span></div>
+        <div class="index-term">Blockbuster (case study)<span class="ipage">Ch.1 / p.6</span></div>
+        <div class="index-term">Board governance<span class="ipage">Ch.4 / p.22</span></div>
+
+        <div class="index-letter">C</div>
+        <div class="index-term">Cascade effect<span class="ipage">Ch.2 / p.11</span></div>
+        <div class="index-term">Checklists<span class="ipage">Ch.3 / p.20</span></div>
+        <div class="index-term">Cognitive biases<span class="ipage">Ch.6 / p.35</span></div>
+        <div class="index-term">Colonial Pipeline<span class="ipage">Ch.2 / p.11</span></div>
+        <div class="index-term">Complacency<span class="ipage">Ch.6 / p.33</span></div>
+        <div class="index-term">Compliance Risk<span class="ipage">Ch.2 / p.9</span></div>
+        <div class="index-term">Consequences (identification)<span class="ipage">Ch.3 / p.14</span></div>
+        <div class="index-term">Controls<span class="ipage">Ch.4 / p.24</span></div>
+        <div class="index-term">Cyber Risk<span class="ipage">Ch.2 / p.10</span></div>
+
+        <div class="index-letter">E</div>
+        <div class="index-term">Effect (ISO 31000)<span class="ipage">Ch.1 / p.5</span></div>
+        <div class="index-term">Escalation<span class="ipage">Ch.4 / p.25</span></div>
+        <div class="index-term">Expert interviews<span class="ipage">Ch.3 / p.17</span></div>
+
+        <div class="index-letter">F</div>
+        <div class="index-term">Financial Risk<span class="ipage">Ch.2 / p.9</span></div>
+        <div class="index-term">FMEA (Process Walk-Through)<span class="ipage">Ch.3 / p.18</span></div>
+        <div class="index-term">FCRP certification<span class="ipage">Cover / p.i</span></div>
+
+        <div class="index-letter">G–H</div>
+        <div class="index-term">Governance<span class="ipage">Ch.4 / p.22</span></div>
+        <div class="index-term">Group discussions<span class="ipage">Ch.3 / p.16</span></div>
+        <div class="index-term">Groupthink<span class="ipage">Ch.6 / p.34</span></div>
+        <div class="index-term">Human factors in risk<span class="ipage">Ch.6 / p.33</span></div>
+      </div>
+
+      <div>
+        <div class="index-letter">I</div>
+        <div class="index-term">IIA Three Lines Model<span class="ipage">Ch.4 / p.23</span></div>
+        <div class="index-term">ISO 31000:2018<span class="ipage">Ch.1 / p.4</span></div>
+        <div class="index-term">ISO 31010:2019<span class="ipage">Ch.3 / p.21</span></div>
+
+        <div class="index-letter">J</div>
+        <div class="index-term">JP Morgan (case study)<span class="ipage">Ch.2 / p.9</span></div>
+
+        <div class="index-letter">K</div>
+        <div class="index-term">Known-Known<span class="ipage">Ch.1 / p.5</span></div>
+        <div class="index-term">Known-Unknown<span class="ipage">Ch.1 / p.5</span></div>
+        <div class="index-term">Kodak (case study)<span class="ipage">Ch.2 / p.8</span></div>
+
+        <div class="index-letter">M</div>
+        <div class="index-term">Meta / GDPR (case study)<span class="ipage">Ch.2 / p.9</span></div>
+        <div class="index-term">Myths about risk<span class="ipage">Ch.1 / p.3</span></div>
+
+        <div class="index-letter">N</div>
+        <div class="index-term">Netflix (case study)<span class="ipage">Ch.1 / p.6</span></div>
+        <div class="index-term">NovaTech Solutions (case study)<span class="ipage">Ch.5 / p.27</span></div>
+
+        <div class="index-letter">O</div>
+        <div class="index-term">Objectives (ISO 31000)<span class="ipage">Ch.1 / p.6</span></div>
+        <div class="index-term">Operational Risk<span class="ipage">Ch.2 / p.9</span></div>
+        <div class="index-term">Opportunity (positive risk)<span class="ipage">Ch.1 / p.6</span></div>
+
+        <div class="index-letter">R</div>
+        <div class="index-term">Reporting<span class="ipage">Ch.4 / p.25</span></div>
+        <div class="index-term">Reputational Risk<span class="ipage">Ch.2 / p.10</span></div>
+        <div class="index-term">Risk Register<span class="ipage">Ch.3 / p.14</span></div>
+
+        <div class="index-letter">S</div>
+        <div class="index-term">Strategic Risk<span class="ipage">Ch.2 / p.8</span></div>
+
+        <div class="index-letter">T–W</div>
+        <div class="index-term">Three Lines Model<span class="ipage">Ch.4 / p.23</span></div>
+        <div class="index-term">Uncertainty (ISO 31000)<span class="ipage">Ch.1 / p.5</span></div>
+        <div class="index-term">United Airlines (case study)<span class="ipage">Ch.2 / p.10</span></div>
+        <div class="index-term">Unknown-Unknown<span class="ipage">Ch.1 / p.5</span></div>
+        <div class="index-term">Workshops<span class="ipage">Ch.3 / p.17</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <div class="pf-left">Fincomp Academy — FCRP Part 1: Risk Essentials Foundation</div>
+    <div class="pf-center">· · ·</div>
+    <div class="pf-right">31</div>
+  </div>
+</div>
+
+<!-- ═══════════════════ BACK COVER ═══════════════════ -->
+<div class="cover" style="min-height: 280px; justify-content: center; padding: 48px 56px; gap: 0;">
+  <div style="position: relative; z-index: 1; text-align: center;">
+    <div style="font-size: 10px; letter-spacing: 4px; color: var(--sky); font-weight: 700; text-transform: uppercase; margin-bottom: 12px;">Fincomp Academy · FCRP Series</div>
+    <div style="font-family: &#39;Playfair Display&#39;, serif; font-size: 18px; color: rgba(255,255,255,0.6); margin-bottom: 20px; font-style: italic;">Part 1 sets the foundation. Part 2 puts it into practice.</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.35);">Author: Sabarish Raman &nbsp;·&nbsp; Fincomp Academy &nbsp;·&nbsp; 2025 &nbsp;·&nbsp; ISO 31000:2018 Aligned</div>
+    <div style="margin-top: 16px; font-size: 13px; color: var(--teal2); font-weight: 600;">fincomp.io</div>
+  </div>
+</div>
+
+</div><!-- end book-wrapper -->
+
+
+</body></html>
